@@ -44,8 +44,8 @@ class Nishant:
 
     def currently(self):
         return [
-            "shipping Relay — a cost-optimizing LLM gateway",
-            "growing Argus — LLM evaluation & observability",
+            "shipping Relay - a cost-optimizing LLM gateway",
+            "growing Argus - LLM evaluation & observability",
             "open to SWE / ML opportunities",
         ]
 
@@ -59,7 +59,7 @@ if __name__ == "__main__":
 
 ## 🧰 Tools I reach for
 
-<!-- Curated from the resume — full icon list at skillicons.dev if you want to tweak -->
+<!-- Curated from the resume - full icon list at skillicons.dev if you want to tweak -->
 <div align="center">
   <img src="https://skillicons.dev/icons?i=python,java,spring,js,ts,react,nodejs,fastapi,tensorflow,sklearn,azure,aws,gcp,docker,kubernetes,postgres,redis,mongodb,prometheus,grafana,githubactions,git,flutter,figma&perline=8" />
 </div>
@@ -82,7 +82,7 @@ if __name__ == "__main__":
   </a>
   
   <!-- Cue (Intent-Aware AI Workspace Agent): once it's a public repo, swap a card
-       above for this one — just update "repo=" if the repo name differs:
+       above for this one - just update "repo=" if the repo name differs:
   <a href="https://github.com/Nishant2306/cue">
     <img src="https://github-readme-stats.vercel.app/api/pin/?username=Nishant2306&repo=cue&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=A78BFA&icon_color=EC4899" />
   </a>
