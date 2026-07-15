@@ -67,14 +67,14 @@ if __name__ == "__main__":
 ## 🚀 Things I've built
 
 <div align="center">
-  <a href="https://github.com/Nishant2306/relay"><img width="48%" alt="Relay - Cost-Optimizing LLM Gateway" src="https://raw.githubusercontent.com/Nishant2306/Nishant2306/main/assets/card-relay.svg" /></a>
-  <a href="https://github.com/Nishant2306/argus"><img width="48%" alt="Argus - LLM Evaluation and Observability Platform" src="https://raw.githubusercontent.com/Nishant2306/Nishant2306/main/assets/card-argus.svg" /></a>
+  <a href="https://github.com/Nishant2306/relay"><img width="48%" alt="Relay - Cost-Optimizing LLM Gateway" src="https://raw.githubusercontent.com/Nishant2306/Nishant2306/master/assets/card-relay.svg" /></a>
+  <a href="https://github.com/Nishant2306/argus"><img width="48%" alt="Argus - LLM Evaluation and Observability Platform" src="https://raw.githubusercontent.com/Nishant2306/Nishant2306/master/assets/card-argus.svg" /></a>
   <br />
-  <a href="https://github.com/Siriapps/Cue"><img width="48%" alt="Cue - Intent-Aware AI Workspace Agent" src="https://raw.githubusercontent.com/Nishant2306/Nishant2306/main/assets/card-cue.svg" /></a>
-  <a href="https://github.com/Nishant2306/DiveDash"><img width="48%" alt="DIVDASH - Diversity and Inclusion Analytics Dashboard" src="https://raw.githubusercontent.com/Nishant2306/Nishant2306/main/assets/card-divdash.svg" /></a>
+  <a href="https://github.com/Siriapps/Cue"><img width="48%" alt="Cue - Intent-Aware AI Workspace Agent" src="https://raw.githubusercontent.com/Nishant2306/Nishant2306/master/assets/card-cue.svg" /></a>
+  <a href="https://github.com/Nishant2306/DiveDash"><img width="48%" alt="DIVDASH - Diversity and Inclusion Analytics Dashboard" src="https://raw.githubusercontent.com/Nishant2306/Nishant2306/master/assets/card-divdash.svg" /></a>
   <br />
-  <a href="https://github.com/satty26/disha"><img width="48%" alt="DISHA - Student-Mentor Platform" src="https://raw.githubusercontent.com/Nishant2306/Nishant2306/main/assets/card-disha.svg" /></a>
-  <img width="48%" alt="AID - Assistive Interface for the Deaf (private)" src="https://raw.githubusercontent.com/Nishant2306/Nishant2306/main/assets/card-aid.svg" />
+  <a href="https://github.com/satty26/disha"><img width="48%" alt="DISHA - Student-Mentor Platform" src="https://raw.githubusercontent.com/Nishant2306/Nishant2306/master/assets/card-disha.svg" /></a>
+  <img width="48%" alt="AID - Assistive Interface for the Deaf (private)" src="https://raw.githubusercontent.com/Nishant2306/Nishant2306/master/assets/card-aid.svg" />
 </div>
 
 ## 🐍 A snake eating my contributions
