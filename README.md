@@ -3,9 +3,7 @@
 </div>
 
 <div align="center">
-  <a href="https://nishcodes.com">
-    <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=24&duration=2600&pause=800&color=A78BFA&center=true&vCenter=true&width=650&height=60&lines=AI+Developer+Intern+%40+ORIX;MS+CS+%40+Indiana+University+Bloomington;Building+LLM+gateways%2C+evals+%26+RAG+pipelines;Ex-Nomura+%E2%80%A2+Ex-Tata+Research" alt="Typing intro" />
-  </a>
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=24&duration=2600&pause=800&color=A78BFA&center=true&vCenter=true&width=650&height=60&lines=AI+Developer+Intern+%40+ORIX;MS+CS+%40+Indiana+University+Bloomington;Building+LLM+gateways%2C+evals+%26+RAG+pipelines;Ex-Nomura+%E2%80%A2+Ex-Tata+Research" alt="Typing intro" />
 </div>
 
 <div align="center">
@@ -14,13 +12,15 @@
   </a>
   &nbsp;
   <a href="https://www.linkedin.com/in/nishant-chaudhary-9a250521a">
-    <img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logoColor=white" />
+    <img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" />
   </a>
   &nbsp;
   <a href="mailto:nishantchaudhary0512@gmail.com">
     <img src="https://img.shields.io/badge/Email-Say%20hi-EA4335?style=for-the-badge&logo=gmail&logoColor=white" />
   </a>
+
   <br /><br />
+
   <img src="https://komarev.com/ghpvc/?username=Nishant2306&style=for-the-badge&color=8B5CF6&label=PROFILE+VISITS" />
 </div>
 
@@ -59,7 +59,6 @@ if __name__ == "__main__":
 
 ## 🧰 Tools I reach for
 
-<!-- Curated from the resume - full icon list at skillicons.dev if you want to tweak -->
 <div align="center">
   <img src="https://skillicons.dev/icons?i=python,java,spring,js,ts,react,nodejs,fastapi,tensorflow,sklearn,azure,aws,gcp,docker,kubernetes,postgres,redis,mongodb,prometheus,grafana,githubactions,git,flutter,figma&perline=8" />
 </div>
@@ -67,13 +66,17 @@ if __name__ == "__main__":
 ## 🚀 Things I've built
 
 <div align="center">
-  <a href="https://github.com/Nishant2306/relay"><img width="48%" alt="Relay - Cost-Optimizing LLM Gateway" src="https://raw.githubusercontent.com/Nishant2306/Nishant2306/master/assets/card-relay.svg" /></a>
-  <a href="https://github.com/Nishant2306/argus"><img width="48%" alt="Argus - LLM Evaluation and Observability Platform" src="https://raw.githubusercontent.com/Nishant2306/Nishant2306/master/assets/card-argus.svg" /></a>
+  <img width="48%" alt="Relay - Cost-Optimizing LLM Gateway" src="https://raw.githubusercontent.com/Nishant2306/Nishant2306/master/assets/card-relay.svg" />
+  <img width="48%" alt="Argus - LLM Evaluation and Observability Platform" src="https://raw.githubusercontent.com/Nishant2306/Nishant2306/master/assets/card-argus.svg" />
+
   <br />
-  <a href="https://github.com/Siriapps/Cue"><img width="48%" alt="Cue - Intent-Aware AI Workspace Agent" src="https://raw.githubusercontent.com/Nishant2306/Nishant2306/master/assets/card-cue.svg" /></a>
-  <a href="https://github.com/Nishant2306/DiveDash"><img width="48%" alt="DIVDASH - Diversity and Inclusion Analytics Dashboard" src="https://raw.githubusercontent.com/Nishant2306/Nishant2306/master/assets/card-divdash.svg" /></a>
+
+  <img width="48%" alt="Cue - Intent-Aware AI Workspace Agent" src="https://raw.githubusercontent.com/Nishant2306/Nishant2306/master/assets/card-cue.svg" />
+  <img width="48%" alt="DIVDASH - Diversity and Inclusion Analytics Dashboard" src="https://raw.githubusercontent.com/Nishant2306/Nishant2306/master/assets/card-divdash.svg" />
+
   <br />
-  <a href="https://github.com/satty26/disha"><img width="48%" alt="DISHA - Student-Mentor Platform" src="https://raw.githubusercontent.com/Nishant2306/Nishant2306/master/assets/card-disha.svg" /></a>
+
+  <img width="48%" alt="DISHA - Student-Mentor Platform" src="https://raw.githubusercontent.com/Nishant2306/Nishant2306/master/assets/card-disha.svg" />
   <img width="48%" alt="AID - Assistive Interface for the Deaf (private)" src="https://raw.githubusercontent.com/Nishant2306/Nishant2306/master/assets/card-aid.svg" />
 </div>
 
