@@ -1,0 +1,45 @@
+<svg width="420" height="251" viewBox="0 0 420 251" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Cue — Intent-Aware AI Workspace Agent">
+<defs>
+  <linearGradient id="border" x1="0" y1="0" x2="420" y2="251" gradientUnits="userSpaceOnUse">
+    <stop offset="0" stop-color="#4F46E5"/><stop offset="0.5" stop-color="#A78BFA"/><stop offset="1" stop-color="#EC4899"/>
+  </linearGradient>
+  <linearGradient id="bg" x1="0" y1="0" x2="0" y2="251" gradientUnits="userSpaceOnUse">
+    <stop offset="0" stop-color="#171C28"/><stop offset="1" stop-color="#0F131B"/>
+  </linearGradient>
+  <linearGradient id="bar" x1="0" y1="0" x2="44" y2="0" gradientUnits="userSpaceOnUse">
+    <stop offset="0" stop-color="#A78BFA"/><stop offset="1" stop-color="#EC4899"/>
+  </linearGradient>
+  <radialGradient id="glowV" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
+    gradientTransform="translate(380 20) rotate(115) scale(190)">
+    <stop offset="0" stop-color="#8B5CF6" stop-opacity="0.22"/><stop offset="1" stop-color="#8B5CF6" stop-opacity="0"/>
+  </radialGradient>
+  <radialGradient id="glowM" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
+    gradientTransform="translate(30 236) rotate(-65) scale(170)">
+    <stop offset="0" stop-color="#EC4899" stop-opacity="0.14"/><stop offset="1" stop-color="#EC4899" stop-opacity="0"/>
+  </radialGradient>
+  <clipPath id="clip"><rect x="1" y="1" width="418" height="249" rx="15"/></clipPath>
+</defs>
+<rect x="1" y="1" width="418" height="249" rx="15" fill="url(#bg)"/>
+<g clip-path="url(#clip)"><rect x="1" y="1" width="418" height="249" fill="url(#glowV)"/><rect x="1" y="1" width="418" height="249" fill="url(#glowM)"/></g>
+<rect x="1" y="1" width="418" height="249" rx="15" stroke="url(#border)" stroke-opacity="0.85" stroke-width="1.6"/>
+<text x="24" y="46" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="20" font-weight="700" fill="#F0F6FC">🧠  Cue</text>
+<circle cx="334" cy="40" r="3" fill="#A78BFA"><animate attributeName="opacity" values="1;0.25;1" dur="2.6s" repeatCount="indefinite"/></circle>
+<text x="396" y="44" text-anchor="end" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="10.5" fill="#7D8590">Feb 2026</text>
+<rect x="24" y="56" width="44" height="3" rx="1.5" fill="url(#bar)"/>
+<text x="24" y="82" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="11" fill="#9BA6B5">Intent-Aware AI Workspace Agent</text>
+<rect x="24" y="96" width="54" height="22" rx="6" fill="#A78BFA" fill-opacity="0.10" stroke="#A78BFA" stroke-opacity="0.28"/>
+<text x="51" y="111" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="10" fill="#C9B8FF">Gemini</text>
+<rect x="86" y="96" width="48" height="22" rx="6" fill="#A78BFA" fill-opacity="0.10" stroke="#A78BFA" stroke-opacity="0.28"/>
+<text x="110" y="111" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="10" fill="#C9B8FF">React</text>
+<rect x="142" y="96" width="96" height="22" rx="6" fill="#A78BFA" fill-opacity="0.10" stroke="#A78BFA" stroke-opacity="0.28"/>
+<text x="190" y="111" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="10" fill="#C9B8FF">MongoDB Atlas</text>
+<rect x="246" y="96" width="36" height="22" rx="6" fill="#A78BFA" fill-opacity="0.10" stroke="#A78BFA" stroke-opacity="0.28"/>
+<text x="264" y="111" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="10" fill="#C9B8FF">MCP</text>
+<circle cx="28" cy="138" r="2.5" fill="#EC4899"/>
+<text x="40" y="142" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="11" fill="#A9B4C0">Predictive Chrome extension that forecasts your<tspan fill="#E6EDF3" font-weight="700"> next</tspan></text>
+<text x="40" y="159" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="11" fill="#A9B4C0"><tspan fill="#E6EDF3" font-weight="700">five tasks</tspan> from browsing history.</text>
+<circle cx="28" cy="179" r="2.5" fill="#EC4899"/>
+<text x="40" y="183" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="11" fill="#A9B4C0">Runs autonomously across<tspan fill="#E6EDF3" font-weight="700"> 9+ Google Workspace tools</tspan></text>
+<text x="40" y="200" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="11" fill="#A9B4C0">via MCP, with multimodal meeting summaries.</text>
+<text x="396" y="233" text-anchor="end" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="10.5" fill="#A78BFA">view repo →</text>
+</svg>

@@ -1,0 +1,53 @@
+<svg width="420" height="315" viewBox="0 0 420 315" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Relay — Cost-Optimizing LLM Gateway">
+<defs>
+  <linearGradient id="border" x1="0" y1="0" x2="420" y2="315" gradientUnits="userSpaceOnUse">
+    <stop offset="0" stop-color="#4F46E5"/><stop offset="0.5" stop-color="#A78BFA"/><stop offset="1" stop-color="#EC4899"/>
+  </linearGradient>
+  <linearGradient id="bg" x1="0" y1="0" x2="0" y2="315" gradientUnits="userSpaceOnUse">
+    <stop offset="0" stop-color="#171C28"/><stop offset="1" stop-color="#0F131B"/>
+  </linearGradient>
+  <linearGradient id="bar" x1="0" y1="0" x2="44" y2="0" gradientUnits="userSpaceOnUse">
+    <stop offset="0" stop-color="#A78BFA"/><stop offset="1" stop-color="#EC4899"/>
+  </linearGradient>
+  <radialGradient id="glowV" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
+    gradientTransform="translate(380 20) rotate(115) scale(190)">
+    <stop offset="0" stop-color="#8B5CF6" stop-opacity="0.22"/><stop offset="1" stop-color="#8B5CF6" stop-opacity="0"/>
+  </radialGradient>
+  <radialGradient id="glowM" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
+    gradientTransform="translate(30 300) rotate(-65) scale(170)">
+    <stop offset="0" stop-color="#EC4899" stop-opacity="0.14"/><stop offset="1" stop-color="#EC4899" stop-opacity="0"/>
+  </radialGradient>
+  <clipPath id="clip"><rect x="1" y="1" width="418" height="313" rx="15"/></clipPath>
+</defs>
+<rect x="1" y="1" width="418" height="313" rx="15" fill="url(#bg)"/>
+<g clip-path="url(#clip)"><rect x="1" y="1" width="418" height="313" fill="url(#glowV)"/><rect x="1" y="1" width="418" height="313" fill="url(#glowM)"/></g>
+<rect x="1" y="1" width="418" height="313" rx="15" stroke="url(#border)" stroke-opacity="0.85" stroke-width="1.6"/>
+<text x="24" y="46" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="20" font-weight="700" fill="#F0F6FC">⚡  Relay</text>
+<circle cx="334" cy="40" r="3" fill="#A78BFA"><animate attributeName="opacity" values="1;0.25;1" dur="2.6s" repeatCount="indefinite"/></circle>
+<text x="396" y="44" text-anchor="end" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="10.5" fill="#7D8590">Jul 2026</text>
+<rect x="24" y="56" width="44" height="3" rx="1.5" fill="url(#bar)"/>
+<text x="24" y="82" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="11" fill="#9BA6B5">Cost-Optimizing LLM Gateway</text>
+<rect x="24" y="96" width="54" height="22" rx="6" fill="#A78BFA" fill-opacity="0.10" stroke="#A78BFA" stroke-opacity="0.28"/>
+<text x="51" y="111" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="10" fill="#C9B8FF">Python</text>
+<rect x="86" y="96" width="60" height="22" rx="6" fill="#A78BFA" fill-opacity="0.10" stroke="#A78BFA" stroke-opacity="0.28"/>
+<text x="116" y="111" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="10" fill="#C9B8FF">FastAPI</text>
+<rect x="154" y="96" width="48" height="22" rx="6" fill="#A78BFA" fill-opacity="0.10" stroke="#A78BFA" stroke-opacity="0.28"/>
+<text x="178" y="111" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="10" fill="#C9B8FF">Redis</text>
+<rect x="210" y="96" width="78" height="22" rx="6" fill="#A78BFA" fill-opacity="0.10" stroke="#A78BFA" stroke-opacity="0.28"/>
+<text x="249" y="111" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="10" fill="#C9B8FF">PostgreSQL</text>
+<rect x="296" y="96" width="78" height="22" rx="6" fill="#A78BFA" fill-opacity="0.10" stroke="#A78BFA" stroke-opacity="0.28"/>
+<text x="335" y="111" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="10" fill="#C9B8FF">Prometheus</text>
+<rect x="24" y="126" width="60" height="22" rx="6" fill="#A78BFA" fill-opacity="0.10" stroke="#A78BFA" stroke-opacity="0.28"/>
+<text x="54" y="141" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="10" fill="#C9B8FF">Grafana</text>
+<rect x="92" y="126" width="54" height="22" rx="6" fill="#A78BFA" fill-opacity="0.10" stroke="#A78BFA" stroke-opacity="0.28"/>
+<text x="119" y="141" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="10" fill="#C9B8FF">Docker</text>
+<circle cx="28" cy="168" r="2.5" fill="#EC4899"/>
+<text x="40" y="172" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="11" fill="#A9B4C0">Semantic caching (<tspan fill="#E6EDF3" font-weight="700"> 95% hit rate</tspan> ) + complexity-based</text>
+<text x="40" y="189" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="11" fill="#A9B4C0">model routing — cut simulated API spend<tspan fill="#E6EDF3" font-weight="700"> 91%</tspan> over</text>
+<text x="40" y="206" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="11" fill="#A9B4C0">67k-request load tests.</text>
+<circle cx="28" cy="226" r="2.5" fill="#EC4899"/>
+<text x="40" y="230" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="11" fill="#A9B4C0">Token buckets, per-team budgets &amp; circuit-breaker</text>
+<text x="40" y="247" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="11" fill="#A9B4C0">failover:<tspan fill="#E6EDF3" font-weight="700"> zero dropped requests</tspan> at 3.6 ms p50</text>
+<text x="40" y="264" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="11" fill="#A9B4C0">overhead.</text>
+<text x="396" y="297" text-anchor="end" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="10.5" fill="#A78BFA">view repo →</text>
+</svg>
