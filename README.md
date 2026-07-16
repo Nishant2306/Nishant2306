@@ -14,7 +14,7 @@
   </a>
   &nbsp;
   <a href="https://www.linkedin.com/in/nishant-chaudhary-9a250521a">
-    <img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badgen&logoColor=white" />
+    <img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logoColor=white" />
   </a>
   &nbsp;
   <a href="mailto:nishantchaudhary0512@gmail.com">
@@ -92,6 +92,7 @@ if __name__ == "__master__":
 <div align="center">
   <b>Got an idea worth building? My inbox is open. 🚀</b>
 </div>
+
 <div align="center">
   <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:4F46E5,100:EC4899&height=110&section=footer" />
 </div>
