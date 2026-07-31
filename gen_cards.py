@@ -46,7 +46,7 @@ CARDS = [
              "Real-time, multilingual visualizations — decision-making **30% faster**.",
          ], footer="view repo →"),
     dict(slug="disha", emoji="🎓", name="DISHA", date="Aug 2024",
-         tagline="Student–Mentor Platform",
+         tagline="Student-Mentor Platform",
          chips=["Dart", "Flutter", "AWS SageMaker"],
          bullets=[
              "Connected **2,000+ students** with **500+ verified professionals** via ML matching on SageMaker.",
@@ -128,8 +128,8 @@ def measure(card):
     _, chip_h = layout_chips(card["chips"])
     n_lines = sum(len(wrap_runs(parse_bold(b), MAX_CHARS)) for b in card["bullets"])
     gaps = (len(card["bullets"]) - 1) * 7
-    # title(58) + tagline(24) + chips + gap(24) + bullets + footer(34) + pad(14)
-    return 58 + 24 + chip_h + 24 + n_lines * LH + gaps + 34 + 14
+    # title(58) + tagline(24) + chips + gap(24) + bullets + bottom pad(20)
+    return 58 + 24 + chip_h + 24 + n_lines * LH + gaps + 20
 
 
 def _spaced(line):
@@ -215,12 +215,50 @@ def build(card, H):
             y += LH
         y += 7
 
-    # footer
-    footer_fill = "#7D8590" if "private" in card["footer"] else "#A78BFA"
-    s.append(f'<text x="{W - PAD}" y="{H - 18}" text-anchor="end" font-family="{MONO}" '
-             f'font-size="10.5" fill="{footer_fill}">{esc(card["footer"])}</text>')
     s.append("</svg>")
     return "\n".join(s)
+
+
+# Button strips that sit flush under each card. Because GitHub renders README
+# SVGs as non-interactive <img>, each clickable region must be its own file.
+# HALF = two buttons under one card (24% width each); FULL = one button (48%).
+HALF, FULL = 211, 420
+BTN_H = 42
+
+BUTTONS = [
+    # (filename, width, label, accent, pad_left, pad_right)
+    ("btn-relay-demo",   HALF, "◆  Live Demo  ↗", "demo", 4, 4),
+    ("btn-relay-repo",   HALF, "◆  Source  →",    "repo", 4, 4),
+    ("btn-argus-demo",   HALF, "◆  Live Demo  ↗", "demo", 4, 4),
+    ("btn-argus-repo",   HALF, "◆  Source  →",    "repo", 4, 4),
+    ("btn-cue-repo",     FULL, "◆  View Source on GitHub  →",     "repo", 4, 4),
+    ("btn-divdash-repo", FULL, "◆  View Source on GitHub  →",     "repo", 4, 4),
+    ("btn-disha-repo",   FULL, "◆  View Source on GitHub  →",     "repo", 4, 4),
+    ("btn-aid-private",  FULL, "🔒  Private repository",          "muted", 4, 4),
+]
+
+ACCENTS = {
+    "demo":  dict(stroke="#EC4899", text="#FBCFE8", fill="#EC4899", fill_op="0.12", stroke_op="0.55"),
+    "repo":  dict(stroke="#A78BFA", text="#C9B8FF", fill="#A78BFA", fill_op="0.10", stroke_op="0.45"),
+    "muted": dict(stroke="#6E7681", text="#8B949E", fill="#6E7681", fill_op="0.07", stroke_op="0.35"),
+}
+
+
+def build_button(width, label, accent, pl, pr):
+    a = ACCENTS[accent]
+    x = pl
+    w = width - pl - pr
+    cx = x + w / 2
+    return (
+        f'<svg width="{width}" height="{BTN_H}" viewBox="0 0 {width} {BTN_H}" fill="none" '
+        f'xmlns="http://www.w3.org/2000/svg" role="img" aria-label="{esc(label)}">'
+        f'<rect x="{x}" y="4" width="{w}" height="{BTN_H - 10}" rx="9" '
+        f'fill="{a["fill"]}" fill-opacity="{a["fill_op"]}" '
+        f'stroke="{a["stroke"]}" stroke-opacity="{a["stroke_op"]}" stroke-width="1.4"/>'
+        f'<text x="{cx:.1f}" y="{BTN_H / 2 + 4:.0f}" text-anchor="middle" font-family="{MONO}" '
+        f'font-size="12" font-weight="600" fill="{a["text"]}">{esc(label)}</text>'
+        f'</svg>'
+    )
 
 
 def main():
@@ -235,6 +273,13 @@ def main():
             with open(path, "w") as f:
                 f.write(svg)
             print(f"  wrote {path} ({len(svg)} bytes)")
+
+    for name, width, label, accent, pl, pr in BUTTONS:
+        svg = build_button(width, label, accent, pl, pr)
+        path = f"assets/{name}.svg"
+        with open(path, "w") as f:
+            f.write(svg)
+        print(f"wrote {path} ({width}px)")
 
 
 if __name__ == "__main__":

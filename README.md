@@ -61,10 +61,10 @@ if __name__ == "__main__":
 
 | | | |
 |---|---|---|
-| **ORIX** · AI Developer Intern | `May 2026 – Present` | Event-driven Azure ingestion pipeline feeding an **85,000+ document** knowledge base; RAG agent with hybrid retrieval + reranking; NL→SQL analytics on Databricks that took query authoring from **10 min to under 20 sec**. |
-| **Nomura** · Software Engineer | `Jul 2024 – Jul 2025` | Owned an Angular→React migration of a 40+ page portal (**84% faster** loads for 200+ daily users); auto-onboarding service cutting app setup from **3 weeks to 5 min**; modeled 100+ apps as a Neo4j graph, **-20% API latency**. |
-| **Nomura** · SDE Intern | `Jan 2024 – Jun 2024` | Pact Broker contract testing across services, lifting coverage from **48% to 83%**; rebuilt the portal as 20+ reusable components adopted by teams serving 1,000+ users. |
-| **TCS** · SDE Intern | `May 2023 – Jul 2023` | Medical imaging pipeline over MRI/CT volumes hitting **98.5% detection accuracy** on 2–3 mm lesions; Blender nasal reconstruction across 22 regions served as an AR/VR simulator, **70% faster** than the synchronous build. |
+| **ORIX** · AI Developer Intern | `May 2026 - Present` | Event-driven Azure ingestion pipeline feeding an **85,000+ document** knowledge base; RAG agent with hybrid retrieval + reranking; NL→SQL analytics on Databricks that took query authoring from **10 min to under 20 sec**. |
+| **Nomura** · Software Engineer | `Jul 2024 - Jul 2025` | Owned an Angular→React migration of a 40+ page portal (**84% faster** loads for 200+ daily users); auto-onboarding service cutting app setup from **3 weeks to 5 min**; modeled 100+ apps as a Neo4j graph, **-20% API latency**. |
+| **Nomura** · SDE Intern | `Jan 2024 - Jun 2024` | Pact Broker contract testing across services, lifting coverage from **48% to 83%**; rebuilt the portal as 20+ reusable components adopted by teams serving 1,000+ users. |
+| **TCS** · SDE Intern | `May 2023 - Jul 2023` | Medical imaging pipeline over MRI/CT volumes hitting **98.5% detection accuracy** on 2-3 mm lesions; Blender nasal reconstruction across 22 regions served as an AR/VR simulator, **70% faster** than the synchronous build. |
 
 ## 🧰 Tools I reach for
 
@@ -79,15 +79,20 @@ if __name__ == "__main__":
   <a href="https://github.com/Nishant2306/relay"><img width="48%" alt="Relay — LLM Cost Gateway" src="https://raw.githubusercontent.com/Nishant2306/Nishant2306/master/assets/card-relay.svg" /></a>
   <a href="https://github.com/Nishant2306/argus"><img width="48%" alt="Argus — LLM Evaluation Platform" src="https://raw.githubusercontent.com/Nishant2306/Nishant2306/master/assets/card-argus.svg" /></a>
   <br />
-  <a href="https://nishant2306.github.io/relay/"><img src="https://img.shields.io/badge/Relay-Live%20Demo-A78BFA?style=flat-square&logo=googlechrome&logoColor=white" /></a>
-  &nbsp;&nbsp;
-  <a href="https://nishant2306.github.io/argus/"><img src="https://img.shields.io/badge/Argus-Live%20Demo-EC4899?style=flat-square&logo=googlechrome&logoColor=white" /></a>
+  <a href="https://nishant2306.github.io/relay/"><img width="24%" alt="Relay live demo" src="https://raw.githubusercontent.com/Nishant2306/Nishant2306/master/assets/btn-relay-demo.svg" /></a><a href="https://github.com/Nishant2306/relay"><img width="24%" alt="Relay source" src="https://raw.githubusercontent.com/Nishant2306/Nishant2306/master/assets/btn-relay-repo.svg" /></a>
+  <a href="https://nishant2306.github.io/argus/"><img width="24%" alt="Argus live demo" src="https://raw.githubusercontent.com/Nishant2306/Nishant2306/master/assets/btn-argus-demo.svg" /></a><a href="https://github.com/Nishant2306/argus"><img width="24%" alt="Argus source" src="https://raw.githubusercontent.com/Nishant2306/Nishant2306/master/assets/btn-argus-repo.svg" /></a>
   <br /><br />
   <a href="https://github.com/Siriapps/Cue"><img width="48%" alt="Cue — AI Workspace Agent" src="https://raw.githubusercontent.com/Nishant2306/Nishant2306/master/assets/card-cue.svg" /></a>
   <a href="https://github.com/Nishant2306/DiveDash"><img width="48%" alt="DIVDASH — Diversity and Inclusion Analytics" src="https://raw.githubusercontent.com/Nishant2306/Nishant2306/master/assets/card-divdash.svg" /></a>
+  <br />
+  <a href="https://github.com/Siriapps/Cue"><img width="48%" alt="Cue source" src="https://raw.githubusercontent.com/Nishant2306/Nishant2306/master/assets/btn-cue-repo.svg" /></a>
+  <a href="https://github.com/Nishant2306/DiveDash"><img width="48%" alt="DIVDASH source" src="https://raw.githubusercontent.com/Nishant2306/Nishant2306/master/assets/btn-divdash-repo.svg" /></a>
   <br /><br />
   <a href="https://github.com/satty26/disha"><img width="48%" alt="DISHA — Student-Mentor Platform" src="https://raw.githubusercontent.com/Nishant2306/Nishant2306/master/assets/card-disha.svg" /></a>
-  <img width="48%" alt="AID — Assistive Interface for the Deaf (private)" src="https://raw.githubusercontent.com/Nishant2306/Nishant2306/master/assets/card-aid.svg" />
+  <img width="48%" alt="AID — Assistive Interface for the Deaf" src="https://raw.githubusercontent.com/Nishant2306/Nishant2306/master/assets/card-aid.svg" />
+  <br />
+  <a href="https://github.com/satty26/disha"><img width="48%" alt="DISHA source" src="https://raw.githubusercontent.com/Nishant2306/Nishant2306/master/assets/btn-disha-repo.svg" /></a>
+  <img width="48%" alt="AID is a private repository" src="https://raw.githubusercontent.com/Nishant2306/Nishant2306/master/assets/btn-aid-private.svg" />
 </div>
 
 ## 🐍 A snake eating my contributions

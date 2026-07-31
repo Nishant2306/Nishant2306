@@ -1,9 +1,9 @@
-<svg width="420" height="332" viewBox="0 0 420 332" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Argus — LLM Evaluation Platform">
+<svg width="420" height="304" viewBox="0 0 420 304" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Argus — LLM Evaluation Platform">
 <defs>
-  <linearGradient id="border" x1="0" y1="0" x2="420" y2="332" gradientUnits="userSpaceOnUse">
+  <linearGradient id="border" x1="0" y1="0" x2="420" y2="304" gradientUnits="userSpaceOnUse">
     <stop offset="0" stop-color="#4F46E5"/><stop offset="0.5" stop-color="#A78BFA"/><stop offset="1" stop-color="#EC4899"/>
   </linearGradient>
-  <linearGradient id="bg" x1="0" y1="0" x2="0" y2="332" gradientUnits="userSpaceOnUse">
+  <linearGradient id="bg" x1="0" y1="0" x2="0" y2="304" gradientUnits="userSpaceOnUse">
     <stop offset="0" stop-color="#171C28"/><stop offset="1" stop-color="#0F131B"/>
   </linearGradient>
   <linearGradient id="bar" x1="0" y1="0" x2="44" y2="0" gradientUnits="userSpaceOnUse">
@@ -14,14 +14,14 @@
     <stop offset="0" stop-color="#8B5CF6" stop-opacity="0.22"/><stop offset="1" stop-color="#8B5CF6" stop-opacity="0"/>
   </radialGradient>
   <radialGradient id="glowM" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
-    gradientTransform="translate(30 317) rotate(-65) scale(170)">
+    gradientTransform="translate(30 289) rotate(-65) scale(170)">
     <stop offset="0" stop-color="#EC4899" stop-opacity="0.14"/><stop offset="1" stop-color="#EC4899" stop-opacity="0"/>
   </radialGradient>
-  <clipPath id="clip"><rect x="1" y="1" width="418" height="330" rx="15"/></clipPath>
+  <clipPath id="clip"><rect x="1" y="1" width="418" height="302" rx="15"/></clipPath>
 </defs>
-<rect x="1" y="1" width="418" height="330" rx="15" fill="url(#bg)"/>
-<g clip-path="url(#clip)"><rect x="1" y="1" width="418" height="330" fill="url(#glowV)"/><rect x="1" y="1" width="418" height="330" fill="url(#glowM)"/></g>
-<rect x="1" y="1" width="418" height="330" rx="15" stroke="url(#border)" stroke-opacity="0.85" stroke-width="1.6"/>
+<rect x="1" y="1" width="418" height="302" rx="15" fill="url(#bg)"/>
+<g clip-path="url(#clip)"><rect x="1" y="1" width="418" height="302" fill="url(#glowV)"/><rect x="1" y="1" width="418" height="302" fill="url(#glowM)"/></g>
+<rect x="1" y="1" width="418" height="302" rx="15" stroke="url(#border)" stroke-opacity="0.85" stroke-width="1.6"/>
 <text x="24" y="46" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="20" font-weight="700" fill="#F0F6FC">🔭  Argus</text>
 <circle cx="334" cy="40" r="3" fill="#A78BFA"><animate attributeName="opacity" values="1;0.25;1" dur="2.6s" repeatCount="indefinite"/></circle>
 <text x="396" y="44" text-anchor="end" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="10.5" fill="#7D8590">May 2026</text>
@@ -48,5 +48,4 @@
 <text x="40" y="247" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="11" fill="#A9B4C0">&amp; paired McNemar CI gate flagged<tspan fill="#E6EDF3" font-weight="700"> every injected</tspan></text>
 <text x="40" y="264" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="11" fill="#A9B4C0"><tspan fill="#E6EDF3" font-weight="700">regression</tspan> pre-merge; root-cause analyzer at<tspan fill="#E6EDF3" font-weight="700"> 81%</tspan></text>
 <text x="40" y="281" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="11" fill="#A9B4C0">accuracy.</text>
-<text x="396" y="314" text-anchor="end" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="10.5" fill="#A78BFA">live demo + repo →</text>
 </svg>

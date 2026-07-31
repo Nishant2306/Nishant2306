@@ -1,9 +1,9 @@
-<svg width="420" height="285" viewBox="0 0 420 285" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Cue — AI Workspace Agent">
+<svg width="420" height="257" viewBox="0 0 420 257" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Cue — AI Workspace Agent">
 <defs>
-  <linearGradient id="border" x1="0" y1="0" x2="420" y2="285" gradientUnits="userSpaceOnUse">
+  <linearGradient id="border" x1="0" y1="0" x2="420" y2="257" gradientUnits="userSpaceOnUse">
     <stop offset="0" stop-color="#4F46E5"/><stop offset="0.5" stop-color="#A78BFA"/><stop offset="1" stop-color="#EC4899"/>
   </linearGradient>
-  <linearGradient id="bg" x1="0" y1="0" x2="0" y2="285" gradientUnits="userSpaceOnUse">
+  <linearGradient id="bg" x1="0" y1="0" x2="0" y2="257" gradientUnits="userSpaceOnUse">
     <stop offset="0" stop-color="#171C28"/><stop offset="1" stop-color="#0F131B"/>
   </linearGradient>
   <linearGradient id="bar" x1="0" y1="0" x2="44" y2="0" gradientUnits="userSpaceOnUse">
@@ -14,14 +14,14 @@
     <stop offset="0" stop-color="#8B5CF6" stop-opacity="0.22"/><stop offset="1" stop-color="#8B5CF6" stop-opacity="0"/>
   </radialGradient>
   <radialGradient id="glowM" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
-    gradientTransform="translate(30 270) rotate(-65) scale(170)">
+    gradientTransform="translate(30 242) rotate(-65) scale(170)">
     <stop offset="0" stop-color="#EC4899" stop-opacity="0.14"/><stop offset="1" stop-color="#EC4899" stop-opacity="0"/>
   </radialGradient>
-  <clipPath id="clip"><rect x="1" y="1" width="418" height="283" rx="15"/></clipPath>
+  <clipPath id="clip"><rect x="1" y="1" width="418" height="255" rx="15"/></clipPath>
 </defs>
-<rect x="1" y="1" width="418" height="283" rx="15" fill="url(#bg)"/>
-<g clip-path="url(#clip)"><rect x="1" y="1" width="418" height="283" fill="url(#glowV)"/><rect x="1" y="1" width="418" height="283" fill="url(#glowM)"/></g>
-<rect x="1" y="1" width="418" height="283" rx="15" stroke="url(#border)" stroke-opacity="0.85" stroke-width="1.6"/>
+<rect x="1" y="1" width="418" height="255" rx="15" fill="url(#bg)"/>
+<g clip-path="url(#clip)"><rect x="1" y="1" width="418" height="255" fill="url(#glowV)"/><rect x="1" y="1" width="418" height="255" fill="url(#glowM)"/></g>
+<rect x="1" y="1" width="418" height="255" rx="15" stroke="url(#border)" stroke-opacity="0.85" stroke-width="1.6"/>
 <text x="24" y="46" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="20" font-weight="700" fill="#F0F6FC">🧠  Cue</text>
 <circle cx="334" cy="40" r="3" fill="#A78BFA"><animate attributeName="opacity" values="1;0.25;1" dur="2.6s" repeatCount="indefinite"/></circle>
 <text x="396" y="44" text-anchor="end" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="10.5" fill="#7D8590">Feb 2026</text>
@@ -43,5 +43,4 @@
 <text x="40" y="200" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="11" fill="#A9B4C0">MCP orchestration across<tspan fill="#E6EDF3" font-weight="700"> 9+ Google Workspace tools</tspan> ,</text>
 <text x="40" y="217" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="11" fill="#A9B4C0">plus a multimodal scribe producing meeting summaries</text>
 <text x="40" y="234" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="11" fill="#A9B4C0">and highlight reels.</text>
-<text x="396" y="267" text-anchor="end" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="10.5" fill="#A78BFA">view repo →</text>
 </svg>
