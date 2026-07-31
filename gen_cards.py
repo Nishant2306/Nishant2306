@@ -1,6 +1,9 @@
 #!/usr/bin/env python3
 """Generate themed SVG project cards for the GitHub profile README.
 Palette matches the profile banner: indigo #4F46E5 -> violet #A78BFA -> magenta #EC4899.
+
+To add a project: append a dict to CARDS, add its slug to a ROWS pair, run this
+script, and commit the new SVG in assets/. Use **double asterisks** to bold text.
 """
 import html, os
 
@@ -15,28 +18,28 @@ SANS = "-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif"
 
 CARDS = [
     dict(slug="relay", emoji="⚡", name="Relay", date="Jul 2026",
-         tagline="Cost-Optimizing LLM Gateway",
-         chips=["Python", "FastAPI", "Redis", "PostgreSQL", "Prometheus", "Grafana", "Docker"],
+         tagline="LLM Cost Gateway",
+         chips=["Python", "FastAPI", "Redis Stack", "PostgreSQL", "Prometheus", "Grafana", "Docker"],
          bullets=[
-             "Semantic caching (**95% hit rate**) + complexity-based model routing — cut simulated API spend **91%** over 67k-request load tests.",
-             "Token buckets, per-team budgets & circuit-breaker failover: **zero dropped requests** at 3.6 ms p50 overhead.",
-         ], footer="view repo →"),
+             "OpenAI-compatible gateway with local-embedding semantic caching (**95% hit rate**, 2.5% false hits) and complexity-based routing — **91%** less simulated API spend over 67k requests.",
+             "Lua token buckets, per-team budgets & circuit-breaker failover held **zero dropped requests** through outage drills at **3.6 ms** p50 overhead.",
+         ], footer="live demo + repo →"),
     dict(slug="argus", emoji="🔭", name="Argus", date="May 2026",
-         tagline="LLM Evaluation & Observability Platform",
-         chips=["Python", "FastAPI", "PostgreSQL", "Streamlit", "GitHub Actions"],
+         tagline="LLM Evaluation Platform",
+         chips=["Python", "FastAPI", "PostgreSQL", "Streamlit", "GitHub Actions", "HDBSCAN"],
          bullets=[
-             "Traces multi-step pipelines end to end; mines prod traces into eval sets — HDBSCAN + LLM labels, **92% precision**.",
-             "80-case adversarial benchmark + CI gate: caught **100%** of injected prompt regressions pre-merge.",
-         ], footer="view repo →"),
+             "End-to-end tracing for multi-step LLM chains; auto-mines prod traces into eval sets via HDBSCAN + LLM labeling — **143 cases at 92% precision**.",
+             "80-case adversarial benchmark, six-flag safety judge & paired McNemar CI gate flagged **every injected regression** pre-merge; root-cause analyzer at **81%** accuracy.",
+         ], footer="live demo + repo →"),
     dict(slug="cue", emoji="🧠", name="Cue", date="Feb 2026",
-         tagline="Intent-Aware AI Workspace Agent",
+         tagline="AI Workspace Agent",
          chips=["Gemini", "React", "MongoDB Atlas", "MCP"],
          bullets=[
-             "Predictive Chrome extension that forecasts your **next five tasks** from browsing history.",
-             "Runs autonomously across **9+ Google Workspace tools** via MCP, with multimodal meeting summaries.",
+             "Chrome extension pairing Gemini with MongoDB Atlas to forecast a user's **next five tasks** from browsing history, surfaced in a real-time React dashboard.",
+             "MCP orchestration across **9+ Google Workspace tools**, plus a multimodal scribe producing meeting summaries and highlight reels.",
          ], footer="view repo →"),
     dict(slug="divdash", emoji="📊", name="DIVDASH", date="Oct 2023",
-         tagline="Diversity & Inclusion Analytics Dashboard",
+         tagline="Diversity & Inclusion Analytics",
          chips=["React", "Node.js", "Firebase", "TensorFlow", "AWS Bedrock"],
          bullets=[
              "D&I metrics dashboard with Bedrock-powered generative insights and NLP summaries.",
@@ -58,6 +61,9 @@ CARDS = [
          ], footer="🔒 private repo"),
 ]
 
+# Cards sharing a row get a matched height.
+ROWS = [("relay", "argus"), ("cue", "divdash"), ("disha", "aid")]
+
 
 def esc(s):
     return html.escape(s, quote=True)
@@ -77,12 +83,9 @@ def wrap_runs(runs, max_chars):
     """Word-wrap styled runs; returns list of lines, each a list of (text, bold)."""
     words = []
     for text, bold in runs:
-        pieces = text.split(" ")
-        for i, w in enumerate(pieces):
+        for w in text.split(" "):
             if w:
                 words.append((w, bold))
-            elif i not in (0, len(pieces) - 1):
-                pass
     lines, cur, cur_len = [], [], 0
     for w, bold in words:
         add = len(w) + (1 if cur else 0)
@@ -125,8 +128,13 @@ def measure(card):
     _, chip_h = layout_chips(card["chips"])
     n_lines = sum(len(wrap_runs(parse_bold(b), MAX_CHARS)) for b in card["bullets"])
     gaps = (len(card["bullets"]) - 1) * 7
-    # title block(58) + tagline(24) + chips + gap(24) + bullets + footer(34) + bottom pad(14)
+    # title(58) + tagline(24) + chips + gap(24) + bullets + footer(34) + pad(14)
     return 58 + 24 + chip_h + 24 + n_lines * LH + gaps + 34 + 14
+
+
+def _spaced(line):
+    """Re-insert single spaces between merged runs of a line."""
+    return [(t if i == 0 else " " + t, b) for i, (t, b) in enumerate(line)]
 
 
 def build(card, H):
@@ -208,22 +216,11 @@ def build(card, H):
         y += 7
 
     # footer
-    footer_fill = "#A78BFA" if "view" in card["footer"] else "#7D8590"
+    footer_fill = "#7D8590" if "private" in card["footer"] else "#A78BFA"
     s.append(f'<text x="{W - PAD}" y="{H - 18}" text-anchor="end" font-family="{MONO}" '
              f'font-size="10.5" fill="{footer_fill}">{esc(card["footer"])}</text>')
     s.append("</svg>")
     return "\n".join(s)
-
-
-def _spaced(line):
-    """Re-insert single spaces between merged runs of a line."""
-    out = []
-    for i, (t, b) in enumerate(line):
-        out.append((t if i == 0 else " " + t, b))
-    return out
-
-
-ROWS = [("relay", "argus"), ("cue", "divdash"), ("disha", "aid")]
 
 
 def main():
@@ -233,8 +230,7 @@ def main():
         H = max(measure(by_slug[s]) for s in row)
         print(f"row {row}: height {H}px")
         for slug in row:
-            c = by_slug[slug]
-            svg = build(c, H)
+            svg = build(by_slug[slug], H)
             path = f"assets/card-{slug}.svg"
             with open(path, "w") as f:
                 f.write(svg)
