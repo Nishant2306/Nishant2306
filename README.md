@@ -4,7 +4,7 @@
 
 <div align="center">
   <a href="https://nishcodes.com">
-    <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=24&duration=2600&pause=800&color=00FFC8&center=true&vCenter=true&width=820&height=60&lines=Forward+Deployed+AI+Engineer+Intern+%40+ORIX%3BMS+CS+%40+Indiana+University+Bloomington%3BBuilding+AI+products+from+discovery+to+delivery%3BEx-Nomura+%E2%80%A2+Ex-TCS" alt="Typing intro" />
+    <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=24&duration=2600&pause=800&color=00FFC8&background=09090B&center=true&vCenter=true&width=820&height=60&lines=Forward+Deployed+AI+Engineer+Intern+%40+ORIX%3BMS+CS+%40+Indiana+University+Bloomington%3BBuilding+AI+products+from+discovery+to+delivery%3BEx-Nomura+%E2%80%A2+Ex-TCS" alt="Typing intro" />
   </a>
 </div>
 
@@ -20,42 +20,7 @@
 
 <img width="100%" alt="// 01 — whoami" src="https://raw.githubusercontent.com/Nishant2306/Nishant2306/master/assets/hdr-whoami.svg" />
 
-<img width="100%" alt="nishant@github: ~" src="https://raw.githubusercontent.com/Nishant2306/Nishant2306/master/assets/term-bar.svg" />
-
-```python
-# $ python nishant.py
-
-class Nishant:
-    """Forward deployed AI engineer who turns business problems into products people can use."""
-
-    def __init__(self):
-        self.role = "Forward Deployed AI Engineer Intern @ ORIX"
-        self.study = "MS Computer Science @ Indiana University Bloomington ('27)"
-        self.past_life = ["Software Engineer @ Nomura", "SDE Intern @ TCS"]
-        self.builds = [
-            "enterprise AI products",
-            "LLM gateways",
-            "evaluation platforms",
-            "RAG and analytics agents",
-        ]
-        self.daily = ["Python", "Java", "C++", "TypeScript"]
-        self.based_in = "Bloomington, Indiana"
-
-    def currently(self):
-        return [
-            "building AI products with business teams at ORIX",
-            "shipping Relay, a cost-optimizing LLM gateway",
-            "growing Argus, an LLM evaluation and observability platform",
-            "open to SWE, AI, and forward deployed engineering opportunities",
-        ]
-
-    def fun_fact(self):
-        return "My rubber duck got replaced by an LLM. The duck is still bitter."
-
-
-if __name__ == "__main__":
-    me = Nishant()
-```
+<img width="100%" alt="nishant.py — Forward deployed AI engineer who turns business problems into products people can use. Role: Forward Deployed AI Engineer Intern at ORIX. Study: MS Computer Science at Indiana University Bloomington ('27). Past life: Software Engineer at Nomura, SDE Intern at TCS. Builds enterprise AI products, LLM gateways, evaluation platforms, RAG and analytics agents. Daily: Python, Java, C++, TypeScript. Based in Bloomington, Indiana. Currently building AI products with business teams at ORIX, shipping Relay, growing Argus, and open to SWE, AI, and forward deployed engineering opportunities." src="https://raw.githubusercontent.com/Nishant2306/Nishant2306/master/assets/whoami.svg" />
 
 <br />
 
@@ -107,11 +72,7 @@ if __name__ == "__main__":
 <img width="100%" alt="// 05 — A snake eating my contributions" src="https://raw.githubusercontent.com/Nishant2306/Nishant2306/master/assets/hdr-snake.svg" />
 
 <div align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Nishant2306/Nishant2306/output/github-snake-dark.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Nishant2306/Nishant2306/output/github-snake.svg" />
-    <img alt="Snake animation eating contribution graph" src="https://raw.githubusercontent.com/Nishant2306/Nishant2306/output/github-snake-dark.svg" />
-  </picture>
+  <img alt="Snake animation eating contribution graph" src="https://raw.githubusercontent.com/Nishant2306/Nishant2306/output/github-snake-dark.svg" />
 </div>
 
 <br />

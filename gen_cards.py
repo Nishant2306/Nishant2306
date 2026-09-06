@@ -8,7 +8,7 @@ Palette and type mirror the portfolio at nishcodes.com:
 Everything in assets/ is generated. Edit a content dict below and re-run
 `python gen_cards.py`; use **double asterisks** to accent a metric.
 """
-import html, os
+import html, os, re
 
 # ------------------------------------------------------------------ tokens
 BG_TOP, BG_BOT = "#0c0c12", "#09090b"
@@ -394,7 +394,7 @@ def build_exp(job, index):
 
 
 # ----------------------------------------------------------- section header
-HDR_W, HDR_H = 880, 68
+HDR_W, HDR_H = 880, 84
 
 SECTIONS = [
     ("hdr-whoami", "whoami"),
@@ -406,21 +406,29 @@ SECTIONS = [
 
 
 def build_header(index, title):
-    tw = 0.56 * 30 * len(title) + 22
-    rule_x = min(tw, HDR_W - 120)
+    """A section bar. Opaque so it reads identically on a light or dark canvas."""
+    uid = f"h{index}"
     return (
         f'<svg width="{HDR_W}" height="{HDR_H}" viewBox="0 0 {HDR_W} {HDR_H}" fill="none" '
         f'xmlns="http://www.w3.org/2000/svg" role="img" aria-label="{esc(title)}">'
-        f'<defs><linearGradient id="hr" x1="{rule_x}" y1="0" x2="{HDR_W}" y2="0" '
-        f'gradientUnits="userSpaceOnUse">'
-        f'<stop offset="0" stop-color="{MINT}" stop-opacity="0.55"/>'
-        f'<stop offset="0.45" stop-color="{VIOLET}" stop-opacity="0.30"/>'
-        f'<stop offset="1" stop-color="{VIOLET}" stop-opacity="0"/></linearGradient></defs>'
-        f'<text x="2" y="20" font-family="{MONO}" font-size="11" letter-spacing="4.5" '
+        f'<defs>'
+        f'<linearGradient id="{uid}bg" x1="0" y1="0" x2="{HDR_W}" y2="0" gradientUnits="userSpaceOnUse">'
+        f'<stop offset="0" stop-color="#101018"/><stop offset="1" stop-color="{BG_BOT}"/>'
+        f'</linearGradient>'
+        f'<linearGradient id="{uid}b" x1="0" y1="0" x2="0" y2="{HDR_H}" gradientUnits="userSpaceOnUse">'
+        f'<stop offset="0" stop-color="{MINT}"/><stop offset="1" stop-color="{VIOLET}"/>'
+        f'</linearGradient>'
+        f'<clipPath id="{uid}c"><rect width="{HDR_W}" height="{HDR_H}" rx="12"/></clipPath>'
+        f'</defs>'
+        f'<rect width="{HDR_W}" height="{HDR_H}" rx="12" fill="url(#{uid}bg)"/>'
+        f'<g clip-path="url(#{uid}c)">'
+        f'<rect x="0" y="0" width="5" height="{HDR_H}" fill="url(#{uid}b)"/></g>'
+        f'<rect x="0.5" y="0.5" width="{HDR_W - 1}" height="{HDR_H - 1}" rx="12" fill="none" '
+        f'stroke="#ffffff" stroke-opacity="0.09"/>'
+        f'<text x="30" y="34" font-family="{MONO}" font-size="11" letter-spacing="4.5" '
         f'fill="{MINT}">// {index:02d}</text>'
-        f'<text x="0" y="54" font-family="{SANS}" font-size="30" font-weight="800" '
+        f'<text x="28" y="66" font-family="{SANS}" font-size="30" font-weight="800" '
         f'letter-spacing="-0.6" fill="{WHITE}">{esc(title)}</text>'
-        f'<line x1="{rule_x:.0f}" y1="45" x2="{HDR_W}" y2="45" stroke="url(#hr)" stroke-width="1.4"/>'
         f'</svg>'
     )
 
@@ -558,8 +566,9 @@ def build_closing(text="Got an idea worth building? My inbox is open. 🚀"):
         f'<defs><linearGradient id="cl" x1="0" y1="0" x2="{w}" y2="0" gradientUnits="userSpaceOnUse">'
         f'<stop offset="0" stop-color="{MINT}" stop-opacity="0.10"/>'
         f'<stop offset="1" stop-color="{VIOLET}" stop-opacity="0.10"/></linearGradient></defs>'
+        f'<rect x="1" y="1" width="{w - 2}" height="{h - 2}" rx="12" fill="{BG_BOT}"/>'
         f'<rect x="1" y="1" width="{w - 2}" height="{h - 2}" rx="12" fill="url(#cl)" '
-        f'stroke="{MINT}" stroke-opacity="0.28" stroke-width="1.2"/>'
+        f'stroke="{MINT}" stroke-opacity="0.35" stroke-width="1.2"/>'
         f'<text x="{x0:.0f}" y="{h / 2 + 6:.0f}" font-family="{MONO}" font-size="15" '
         f'font-weight="700" fill="{MINT}">&gt;</text>'
         f'<text x="{x0 + 24:.0f}" y="{h / 2 + 6:.0f}" font-family="{MONO}" font-size="15" '
@@ -592,7 +601,7 @@ BUTTONS = [
 ACCENTS = {
     "demo":  dict(accent=MINT, text=MINT, fill_op="0.10", stroke_op="0.50"),
     "repo":  dict(accent=VIOLET, text=VIOLET_TXT, fill_op="0.10", stroke_op="0.42"),
-    "muted": dict(accent="#6c6c7d", text=MUTED, fill_op="0.07", stroke_op="0.32"),
+    "muted": dict(accent="#6c6c7d", text="#9a9aab", fill_op="0.07", stroke_op="0.32"),
 }
 
 # Header call-to-action pills that replace the shields.io badges.
@@ -621,6 +630,7 @@ def build_button(name, width, label, glyph, accent):
         f'<stop offset="0" stop-color="{a["accent"]}" stop-opacity="{a["fill_op"]}"/>'
         f'<stop offset="1" stop-color="{a["accent"]}" stop-opacity="0.03"/>'
         f'</linearGradient></defs>'
+        f'<rect x="{x}" y="5" width="{w}" height="{h}" rx="9" fill="#0e0e15"/>'
         f'<rect x="{x}" y="5" width="{w}" height="{h}" rx="9" fill="url(#{uid}f)" '
         f'stroke="{a["accent"]}" stroke-opacity="{a["stroke_op"]}" stroke-width="1.3"/>'
         f'<rect x="{x}" y="5" width="3" height="{h}" rx="1.5" fill="{a["accent"]}" '
@@ -655,14 +665,105 @@ def build_cta(name, width, label, glyph, style):
     return (
         f'<svg width="{width}" height="{h}" viewBox="0 0 {width} {h}" fill="none" '
         f'xmlns="http://www.w3.org/2000/svg" role="img" aria-label="{esc(label)}">'
+        f'<rect x="{x}" y="4" width="{w}" height="{bh}" rx="10" fill="#0e0e15"/>'
         f'<rect x="{x}" y="4" width="{w}" height="{bh}" rx="10" fill="{s["accent"]}" '
-        f'fill-opacity="0.11" stroke="{s["accent"]}" stroke-opacity="0.60" stroke-width="1.4"/>'
+        f'fill-opacity="0.14" stroke="{s["accent"]}" stroke-opacity="0.60" stroke-width="1.4"/>'
         f'<text x="{x + w / 2:.0f}" y="{h / 2 + 5:.0f}" text-anchor="middle" '
         f'font-family="{MONO}" font-size="13" font-weight="600" letter-spacing="2" '
         f'fill="{s["text"]}">{esc(label)}  {esc(glyph)}</text>'
         f'</svg>'
     )
 
+
+
+# --------------------------------------------------------------- code panel
+# The ```python fence was the one element GitHub themed itself, so it turned
+# into a light box for light-mode readers. Rendering it as an SVG keeps the
+# page identical in both themes. nishant.py holds the source.
+C_STR, C_KW, C_SELF = MINT_TXT, VIOLET_TXT, "#8fe8ff"
+C_NAME, C_COM, C_DEF = WHITE, MUTED, DIM
+
+KEYWORDS = {"class", "def", "return", "if", "import", "from", "for", "in",
+            "not", "and", "or", "None", "True", "False"}
+DUNDERS = {"__name__", "__main__", "__init__"}
+
+CODE_W, CODE_LH, CODE_CW = 880, 19, 7.52
+BAR_H, X_NUM, X_CODE = 40, 50, 66
+
+STR_RE = re.compile(r'(\"\"\".*?\"\"\"|\'[^\']*\'|"[^"]*")')
+
+
+def highlight(line):
+    """Colour one line of Python; returns merged (text, fill) runs."""
+    if line.strip().startswith("#"):
+        runs = [(line, C_COM)]
+    else:
+        runs = []
+        for i, part in enumerate(STR_RE.split(line)):
+            if not part:
+                continue
+            if i % 2:
+                runs.append((part, C_STR))
+                continue
+            for tok in re.split(r"(\W)", part):
+                if not tok:
+                    continue
+                if tok in KEYWORDS:
+                    runs.append((tok, C_KW))
+                elif tok == "self":
+                    runs.append((tok, C_SELF))
+                elif tok in DUNDERS or tok == "Nishant":
+                    runs.append((tok, C_NAME))
+                else:
+                    runs.append((tok, C_DEF))
+    merged = []
+    for text, fill in runs:
+        if merged and merged[-1][1] == fill:
+            merged[-1] = (merged[-1][0] + text, fill)
+        else:
+            merged.append((text, fill))
+    return merged
+
+
+def build_code(path="nishant.py", title="nishant@github: ~"):
+    with open(path, encoding="utf-8") as f:
+        lines = f.read().rstrip("\n").split("\n")
+    w = CODE_W
+    h = BAR_H + 26 + (len(lines) - 1) * CODE_LH + 26
+    s = [
+        f'<svg width="{w}" height="{h}" viewBox="0 0 {w} {h}" fill="none" '
+        f'xmlns="http://www.w3.org/2000/svg" role="img" '
+        f'aria-label="nishant.py — a Python class describing the role, studies, '
+        f'past roles, stack and current work listed elsewhere on this profile.">',
+        f'<rect width="{w}" height="{h}" rx="12" fill="#0b0b11"/>',
+        f'<path d="M0,{BAR_H} L0,12 Q0,0 12,0 L{w - 12},0 Q{w},0 {w},12 L{w},{BAR_H} Z" '
+        f'fill="#14141c"/>',
+        f'<line x1="0" y1="{BAR_H}" x2="{w}" y2="{BAR_H}" stroke="#ffffff" stroke-opacity="0.08"/>',
+    ]
+    for i, c in enumerate(["#ff5f57", "#febc2e", "#28c840"]):
+        s.append(f'<circle cx="{22 + i * 20}" cy="{BAR_H // 2}" r="5.5" fill="{c}"/>')
+    s.append(f'<text x="{w // 2}" y="{BAR_H // 2 + 4}" text-anchor="middle" font-family="{MONO}" '
+             f'font-size="11" letter-spacing="1.2" fill="{MUTED}">{esc(title)}</text>')
+    s.append(f'<text x="{w - 20}" y="{BAR_H // 2 + 4}" text-anchor="end" font-family="{MONO}" '
+             f'font-size="10.5" letter-spacing="2" fill="{MINT}" fill-opacity="0.65">PY</text>')
+
+    y = BAR_H + 26
+    for n, line in enumerate(lines, start=1):
+        s.append(f'<text x="{X_NUM}" y="{y}" text-anchor="end" font-family="{MONO}" '
+                 f'font-size="11" fill="#ffffff" fill-opacity="0.16">{n}</text>')
+        stripped = line.lstrip(" ")
+        if stripped:
+            indent = len(line) - len(stripped)
+            tspans = "".join(f'<tspan fill="{fill}">{esc(text)}</tspan>'
+                             for text, fill in highlight(stripped))
+            s.append(f'<text x="{X_CODE + indent * CODE_CW:.1f}" y="{y}" xml:space="preserve" '
+                     f'font-family="{MONO}" font-size="12.5">{tspans}</text>')
+        y += CODE_LH
+
+    s.append(f'<rect x="0.5" y="0.5" width="{w - 1}" height="{h - 1}" rx="12" fill="none" '
+             f'stroke="#ffffff" stroke-opacity="0.09"/>')
+    s.append("</svg>")
+    return "\n".join(s)
 
 # -------------------------------------------------------------------- main
 def write(path, svg):
@@ -677,7 +778,7 @@ def main():
     print("banner + footer")
     write("assets/banner.svg", build_banner())
     write("assets/footer.svg", build_footer())
-    write("assets/term-bar.svg", build_termbar())
+    write("assets/whoami.svg", build_code())
     write("assets/closing.svg", build_closing())
 
     print("section headers")
