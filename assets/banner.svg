@@ -1,0 +1,54 @@
+<svg width="1200" height="300" viewBox="0 0 1200 300" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Nishant Chaudhary - Discover, Build, Demo, Iterate, Ship">
+<defs>
+  <linearGradient id="bbg" x1="0" y1="0" x2="0" y2="300" gradientUnits="userSpaceOnUse">
+    <stop offset="0" stop-color="#0d0d14"/><stop offset="1" stop-color="#09090b"/>
+  </linearGradient>
+  <linearGradient id="bname" x1="570" y1="0" x2="940" y2="0" gradientUnits="userSpaceOnUse">
+    <stop offset="0" stop-color="#00ffc8"/><stop offset="1" stop-color="#7850ff"/>
+  </linearGradient>
+  <linearGradient id="brule" x1="0" y1="0" x2="1200" y2="0" gradientUnits="userSpaceOnUse">
+    <stop offset="0" stop-color="#00ffc8" stop-opacity="0"/>
+    <stop offset="0.28" stop-color="#00ffc8" stop-opacity="0.9"/>
+    <stop offset="0.62" stop-color="#7850ff" stop-opacity="0.9"/>
+    <stop offset="1" stop-color="#00d4ff" stop-opacity="0"/>
+  </linearGradient>
+  <pattern id="bgrid" width="44" height="44" patternUnits="userSpaceOnUse">
+    <path d="M44 0H0V44" fill="none" stroke="#00ffc8" stroke-opacity="0.10" stroke-width="1"/>
+  </pattern>
+  <radialGradient id="bfade" cx="0.5" cy="0.5" r="0.5">
+    <stop offset="0" stop-color="#ffffff" stop-opacity="1"/>
+    <stop offset="0.55" stop-color="#ffffff" stop-opacity="0.55"/>
+    <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+  </radialGradient>
+  <radialGradient id="bglowM" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
+    gradientTransform="translate(210 40) rotate(58) scale(420 260)">
+    <stop offset="0" stop-color="#00ffc8" stop-opacity="0.15"/>
+    <stop offset="1" stop-color="#00ffc8" stop-opacity="0"/>
+  </radialGradient>
+  <radialGradient id="bglowV" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
+    gradientTransform="translate(1010 270) rotate(-118) scale(430 280)">
+    <stop offset="0" stop-color="#7850ff" stop-opacity="0.22"/>
+    <stop offset="1" stop-color="#7850ff" stop-opacity="0"/>
+  </radialGradient>
+  <mask id="bmask"><rect width="1200" height="300" fill="url(#bfade)"/></mask>
+  <clipPath id="bandA"><rect x="0" y="142" width="1200" height="22"/></clipPath>
+  <clipPath id="bandB"><rect x="0" y="168" width="1200" height="30"/></clipPath>
+</defs>
+<rect width="1200" height="300" fill="url(#bbg)"/>
+<g mask="url(#bmask)">
+  <g><rect x="-44" y="-44" width="1288" height="388" fill="url(#bgrid)"/>
+    <animateTransform attributeName="transform" type="translate" from="0 0" to="44 44"
+      dur="9s" repeatCount="indefinite"/></g>
+</g>
+<rect width="1200" height="300" fill="url(#bglowM)"/>
+<rect width="1200" height="300" fill="url(#bglowV)"/>
+<path d="M22,56 L22,22 L56,22" fill="none" stroke="#00ffc8" stroke-opacity="0.55" stroke-width="1.5" stroke-linecap="square"/><path d="M1144,22 L1178,22 L1178,56" fill="none" stroke="#00ffc8" stroke-opacity="0.55" stroke-width="1.5" stroke-linecap="square"/><path d="M22,244 L22,278 L56,278" fill="none" stroke="#00ffc8" stroke-opacity="0.55" stroke-width="1.5" stroke-linecap="square"/><path d="M1144,278 L1178,278 L1178,244" fill="none" stroke="#00ffc8" stroke-opacity="0.55" stroke-width="1.5" stroke-linecap="square"/>
+<text x="600" y="112" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="13"
+  letter-spacing="6" fill="#00ffc8">&lt; HELLO WORLD /&gt;</text>
+<text x="600" y="196" text-anchor="middle" font-family="'Segoe UI',-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif" font-size="74" font-weight="800" letter-spacing="-1.5"><tspan fill="#ffffff">Nishant </tspan><tspan fill="url(#bname)">Chaudhary</tspan></text>
+<g clip-path="url(#bandA)"><text x="596" y="194" text-anchor="middle" font-family="'Segoe UI',-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif" font-size="74" font-weight="800" letter-spacing="-1.5"><tspan fill="#00ffc8">Nishant </tspan><tspan fill="#00ffc8">Chaudhary</tspan><animate attributeName="opacity" values="0;0;0.85;0;0.6;0" keyTimes="0;0.88;0.905;0.93;0.95;1" dur="4.5s" repeatCount="indefinite"/></text></g>
+<g clip-path="url(#bandB)"><text x="605" y="198" text-anchor="middle" font-family="'Segoe UI',-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif" font-size="74" font-weight="800" letter-spacing="-1.5"><tspan fill="#7850ff">Nishant </tspan><tspan fill="#7850ff">Chaudhary</tspan><animate attributeName="opacity" values="0;0;0.85;0;0.6;0" keyTimes="0;0.88;0.905;0.93;0.95;1" dur="4.5s" repeatCount="indefinite"/></text></g>
+<text x="600" y="244" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="12.5"
+  letter-spacing="5" fill="#a3a3b2">DISCOVER &#8226; BUILD &#8226; DEMO &#8226; ITERATE &#8226; SHIP</text>
+<line x1="0" y1="297" x2="1200" y2="297" stroke="url(#brule)" stroke-width="3"/>
+</svg>

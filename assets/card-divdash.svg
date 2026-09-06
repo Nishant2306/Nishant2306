@@ -1,46 +1,52 @@
-<svg width="420" height="257" viewBox="0 0 420 257" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="DIVDASH — Diversity &amp; Inclusion Analytics">
+<svg width="420" height="273" viewBox="0 0 420 273" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="DIVDASH — Diversity &amp; Inclusion Analytics. D&amp;I metrics dashboard with Bedrock-powered generative insights and NLP summaries. Real-time, multilingual visualizations — decision-making 30% faster.">
 <defs>
-  <linearGradient id="border" x1="0" y1="0" x2="420" y2="257" gradientUnits="userSpaceOnUse">
-    <stop offset="0" stop-color="#4F46E5"/><stop offset="0.5" stop-color="#A78BFA"/><stop offset="1" stop-color="#EC4899"/>
+  <linearGradient id="c4bg" x1="0" y1="0" x2="0" y2="273" gradientUnits="userSpaceOnUse">
+    <stop offset="0" stop-color="#0c0c12"/><stop offset="1" stop-color="#09090b"/>
   </linearGradient>
-  <linearGradient id="bg" x1="0" y1="0" x2="0" y2="257" gradientUnits="userSpaceOnUse">
-    <stop offset="0" stop-color="#171C28"/><stop offset="1" stop-color="#0F131B"/>
+  <linearGradient id="c4edge" x1="0" y1="0" x2="420" y2="273" gradientUnits="userSpaceOnUse">
+    <stop offset="0" stop-color="#00ffc8" stop-opacity="0.55"/>
+    <stop offset="0.5" stop-color="#7850ff" stop-opacity="0.40"/>
+    <stop offset="1" stop-color="#00d4ff" stop-opacity="0.30"/>
   </linearGradient>
-  <linearGradient id="bar" x1="0" y1="0" x2="44" y2="0" gradientUnits="userSpaceOnUse">
-    <stop offset="0" stop-color="#A78BFA"/><stop offset="1" stop-color="#EC4899"/>
+  <linearGradient id="c4bar" x1="0" y1="0" x2="46" y2="0" gradientUnits="userSpaceOnUse">
+    <stop offset="0" stop-color="#00ffc8"/><stop offset="1" stop-color="#7850ff"/>
   </linearGradient>
-  <radialGradient id="glowV" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
-    gradientTransform="translate(380 20) rotate(115) scale(190)">
-    <stop offset="0" stop-color="#8B5CF6" stop-opacity="0.22"/><stop offset="1" stop-color="#8B5CF6" stop-opacity="0"/>
+  <pattern id="c4grid" width="22" height="22" patternUnits="userSpaceOnUse">
+    <path d="M22 0H0V22" fill="none" stroke="#00ffc8" stroke-opacity="0.045" stroke-width="1"/>
+  </pattern>
+  <radialGradient id="c4gm" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
+    gradientTransform="translate(390 10) rotate(122) scale(259 220)">
+    <stop offset="0" stop-color="#00ffc8" stop-opacity="0.16"/>
+    <stop offset="1" stop-color="#00ffc8" stop-opacity="0"/>
   </radialGradient>
-  <radialGradient id="glowM" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
-    gradientTransform="translate(30 242) rotate(-65) scale(170)">
-    <stop offset="0" stop-color="#EC4899" stop-opacity="0.14"/><stop offset="1" stop-color="#EC4899" stop-opacity="0"/>
+  <radialGradient id="c4gv" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
+    gradientTransform="translate(20 263) rotate(-62) scale(245 240)">
+    <stop offset="0" stop-color="#7850ff" stop-opacity="0.20"/>
+    <stop offset="1" stop-color="#7850ff" stop-opacity="0"/>
   </radialGradient>
-  <clipPath id="clip"><rect x="1" y="1" width="418" height="255" rx="15"/></clipPath>
+  <clipPath id="c4clip"><rect x="1" y="1" width="418" height="271" rx="15"/></clipPath>
 </defs>
-<rect x="1" y="1" width="418" height="255" rx="15" fill="url(#bg)"/>
-<g clip-path="url(#clip)"><rect x="1" y="1" width="418" height="255" fill="url(#glowV)"/><rect x="1" y="1" width="418" height="255" fill="url(#glowM)"/></g>
-<rect x="1" y="1" width="418" height="255" rx="15" stroke="url(#border)" stroke-opacity="0.85" stroke-width="1.6"/>
-<text x="24" y="46" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="20" font-weight="700" fill="#F0F6FC">📊  DIVDASH</text>
-<circle cx="334" cy="40" r="3" fill="#A78BFA"><animate attributeName="opacity" values="1;0.25;1" dur="2.6s" repeatCount="indefinite"/></circle>
-<text x="396" y="44" text-anchor="end" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="10.5" fill="#7D8590">Oct 2023</text>
-<rect x="24" y="56" width="44" height="3" rx="1.5" fill="url(#bar)"/>
-<text x="24" y="82" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="11" fill="#9BA6B5">Diversity &amp; Inclusion Analytics</text>
-<rect x="24" y="96" width="48" height="22" rx="6" fill="#A78BFA" fill-opacity="0.10" stroke="#A78BFA" stroke-opacity="0.28"/>
-<text x="48" y="111" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="10" fill="#C9B8FF">React</text>
-<rect x="80" y="96" width="60" height="22" rx="6" fill="#A78BFA" fill-opacity="0.10" stroke="#A78BFA" stroke-opacity="0.28"/>
-<text x="110" y="111" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="10" fill="#C9B8FF">Node.js</text>
-<rect x="148" y="96" width="66" height="22" rx="6" fill="#A78BFA" fill-opacity="0.10" stroke="#A78BFA" stroke-opacity="0.28"/>
-<text x="181" y="111" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="10" fill="#C9B8FF">Firebase</text>
-<rect x="222" y="96" width="78" height="22" rx="6" fill="#A78BFA" fill-opacity="0.10" stroke="#A78BFA" stroke-opacity="0.28"/>
-<text x="261" y="111" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="10" fill="#C9B8FF">TensorFlow</text>
-<rect x="308" y="96" width="84" height="22" rx="6" fill="#A78BFA" fill-opacity="0.10" stroke="#A78BFA" stroke-opacity="0.28"/>
-<text x="350" y="111" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="10" fill="#C9B8FF">AWS Bedrock</text>
-<circle cx="28" cy="138" r="2.5" fill="#EC4899"/>
-<text x="40" y="142" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="11" fill="#A9B4C0">D&amp;I metrics dashboard with Bedrock-powered generative</text>
-<text x="40" y="159" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="11" fill="#A9B4C0">insights and NLP summaries.</text>
-<circle cx="28" cy="179" r="2.5" fill="#EC4899"/>
-<text x="40" y="183" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="11" fill="#A9B4C0">Real-time, multilingual visualizations —</text>
-<text x="40" y="200" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="11" fill="#A9B4C0">decision-making<tspan fill="#E6EDF3" font-weight="700"> 30% faster</tspan> .</text>
+<rect x="1" y="1" width="418" height="271" rx="15" fill="url(#c4bg)"/><g clip-path="url(#c4clip)"><rect x="1" y="1" width="418" height="271" fill="url(#c4grid)"/><rect x="1" y="1" width="418" height="271" fill="url(#c4gm)"/><rect x="1" y="1" width="418" height="271" fill="url(#c4gv)"/></g><rect x="1" y="1" width="418" height="271" rx="15" fill="none" stroke="#ffffff" stroke-opacity="0.09" stroke-width="1"/><rect x="1" y="1" width="418" height="271" rx="15" fill="none" stroke="url(#c4edge)" stroke-width="1.4"/><path d="M13,30 L13,13 L30,13" fill="none" stroke="#00ffc8" stroke-opacity="0.5" stroke-width="1.5" stroke-linecap="square"/><path d="M390,13 L407,13 L407,30" fill="none" stroke="#00ffc8" stroke-opacity="0.5" stroke-width="1.5" stroke-linecap="square"/><path d="M13,243 L13,260 L30,260" fill="none" stroke="#00ffc8" stroke-opacity="0.5" stroke-width="1.5" stroke-linecap="square"/><path d="M390,260 L407,260 L407,243" fill="none" stroke="#00ffc8" stroke-opacity="0.5" stroke-width="1.5" stroke-linecap="square"/>
+<text x="24" y="30" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="9.5" letter-spacing="2.4" fill="#00ffc8" fill-opacity="0.75">PRJ_04</text>
+<circle cx="333" cy="26" r="6.7" fill="#00ffc8" fill-opacity="0.14"><animate attributeName="r" values="3.2;8.2;3.2" dur="2.8s" repeatCount="indefinite"/><animate attributeName="fill-opacity" values="0.22;0;0.22" dur="2.8s" repeatCount="indefinite"/></circle><circle cx="333" cy="26" r="3.2" fill="#00ffc8"><animate attributeName="opacity" values="1;0.35;1" dur="2.8s" repeatCount="indefinite"/></circle>
+<text x="396" y="30" text-anchor="end" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="10" letter-spacing="0.6" fill="#6c6c7d">Oct 2023</text>
+<text x="24" y="62" font-family="'Segoe UI',-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif" font-size="21" font-weight="700" letter-spacing="-0.4" fill="#ffffff">📊  DIVDASH</text>
+<rect x="24" y="72" width="46" height="3" rx="1.5" fill="url(#c4bar)"/>
+<text x="24" y="96" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="10.5" letter-spacing="1.6" fill="#a3a3b2">DIVERSITY &amp; INCLUSION ANALYTICS</text>
+<rect x="24" y="110" width="48" height="22" rx="6" fill="#00ffc8" fill-opacity="0.09" stroke="#00ffc8" stroke-opacity="0.30"/>
+<text x="48" y="125" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="10" fill="#7dffb2">React</text>
+<rect x="80" y="110" width="60" height="22" rx="6" fill="#7850ff" fill-opacity="0.09" stroke="#7850ff" stroke-opacity="0.30"/>
+<text x="110" y="125" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="10" fill="#c7a7ff">Node.js</text>
+<rect x="148" y="110" width="66" height="22" rx="6" fill="#7850ff" fill-opacity="0.09" stroke="#7850ff" stroke-opacity="0.30"/>
+<text x="181" y="125" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="10" fill="#c7a7ff">Firebase</text>
+<rect x="222" y="110" width="78" height="22" rx="6" fill="#7850ff" fill-opacity="0.09" stroke="#7850ff" stroke-opacity="0.30"/>
+<text x="261" y="125" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="10" fill="#c7a7ff">TensorFlow</text>
+<rect x="308" y="110" width="84" height="22" rx="6" fill="#7850ff" fill-opacity="0.09" stroke="#7850ff" stroke-opacity="0.30"/>
+<text x="350" y="125" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="10" fill="#c7a7ff">AWS Bedrock</text>
+<path d="M28,152.6 L31.4,156 L28,159.4 L24.6,156 Z" fill="#00ffc8"/>
+<text x="40" y="160" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="11" fill="#a3a3b2">D&amp;I metrics dashboard with Bedrock-powered generative</text>
+<text x="40" y="177" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="11" fill="#a3a3b2">insights and NLP summaries.</text>
+<path d="M28,194.6 L31.4,198 L28,201.4 L24.6,198 Z" fill="#00ffc8"/>
+<text x="40" y="202" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="11" fill="#a3a3b2">Real-time, multilingual visualizations —</text>
+<text x="40" y="219" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="11" fill="#a3a3b2">decision-making<tspan fill="#00ffc8" font-weight="700"> 30% faster</tspan>.</text>
 </svg>

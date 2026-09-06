@@ -6,7 +6,7 @@ on:
   workflow_dispatch: # lets you trigger it manually from the Actions tab
   push:
     branches:
-      - main
+      - master
 
 permissions:
   contents: write
@@ -16,13 +16,16 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
+      # Snake and dot ramps match the portfolio palette at nishcodes.com:
+      # dark  — violet #7850ff ramp climbing to mint #00ffc8 on #09090b
+      # light — teal ramp on #f5f5f0 with the light-theme violet #5a30cc snake
       - name: Generate snake SVGs
         uses: Platane/snk/svg-only@v3
         with:
           github_user_name: ${{ github.repository_owner }}
           outputs: |
-            dist/github-snake.svg?color_snake=#8b5cf6
-            dist/github-snake-dark.svg?palette=github-dark&color_snake=#a78bfa
+            dist/github-snake.svg?color_snake=%235a30cc&color_dots=%23f5f5f0,%23cdebe1,%237fd9bf,%232bb894,%2300997a
+            dist/github-snake-dark.svg?color_snake=%2300ffc8&color_dots=%2309090b,%231f1147,%233b2585,%235b39d6,%237850ff
 
       - name: Publish to output branch
         uses: crazy-max/ghaction-github-pages@v4

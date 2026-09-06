@@ -1,46 +1,52 @@
-<svg width="420" height="257" viewBox="0 0 420 257" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Cue — AI Workspace Agent">
+<svg width="420" height="273" viewBox="0 0 420 273" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Cue — AI Workspace Agent. Chrome extension pairing Gemini with MongoDB Atlas to forecast a user&#x27;s next five tasks from browsing history, surfaced in a real-time React dashboard. MCP orchestration across 9+ Google Workspace tools, plus a multimodal scribe producing meeting summaries and highlight reels.">
 <defs>
-  <linearGradient id="border" x1="0" y1="0" x2="420" y2="257" gradientUnits="userSpaceOnUse">
-    <stop offset="0" stop-color="#4F46E5"/><stop offset="0.5" stop-color="#A78BFA"/><stop offset="1" stop-color="#EC4899"/>
+  <linearGradient id="c3bg" x1="0" y1="0" x2="0" y2="273" gradientUnits="userSpaceOnUse">
+    <stop offset="0" stop-color="#0c0c12"/><stop offset="1" stop-color="#09090b"/>
   </linearGradient>
-  <linearGradient id="bg" x1="0" y1="0" x2="0" y2="257" gradientUnits="userSpaceOnUse">
-    <stop offset="0" stop-color="#171C28"/><stop offset="1" stop-color="#0F131B"/>
+  <linearGradient id="c3edge" x1="0" y1="0" x2="420" y2="273" gradientUnits="userSpaceOnUse">
+    <stop offset="0" stop-color="#00ffc8" stop-opacity="0.55"/>
+    <stop offset="0.5" stop-color="#7850ff" stop-opacity="0.40"/>
+    <stop offset="1" stop-color="#00d4ff" stop-opacity="0.30"/>
   </linearGradient>
-  <linearGradient id="bar" x1="0" y1="0" x2="44" y2="0" gradientUnits="userSpaceOnUse">
-    <stop offset="0" stop-color="#A78BFA"/><stop offset="1" stop-color="#EC4899"/>
+  <linearGradient id="c3bar" x1="0" y1="0" x2="46" y2="0" gradientUnits="userSpaceOnUse">
+    <stop offset="0" stop-color="#00ffc8"/><stop offset="1" stop-color="#7850ff"/>
   </linearGradient>
-  <radialGradient id="glowV" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
-    gradientTransform="translate(380 20) rotate(115) scale(190)">
-    <stop offset="0" stop-color="#8B5CF6" stop-opacity="0.22"/><stop offset="1" stop-color="#8B5CF6" stop-opacity="0"/>
+  <pattern id="c3grid" width="22" height="22" patternUnits="userSpaceOnUse">
+    <path d="M22 0H0V22" fill="none" stroke="#00ffc8" stroke-opacity="0.045" stroke-width="1"/>
+  </pattern>
+  <radialGradient id="c3gm" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
+    gradientTransform="translate(390 10) rotate(122) scale(259 220)">
+    <stop offset="0" stop-color="#00ffc8" stop-opacity="0.16"/>
+    <stop offset="1" stop-color="#00ffc8" stop-opacity="0"/>
   </radialGradient>
-  <radialGradient id="glowM" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
-    gradientTransform="translate(30 242) rotate(-65) scale(170)">
-    <stop offset="0" stop-color="#EC4899" stop-opacity="0.14"/><stop offset="1" stop-color="#EC4899" stop-opacity="0"/>
+  <radialGradient id="c3gv" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
+    gradientTransform="translate(20 263) rotate(-62) scale(245 240)">
+    <stop offset="0" stop-color="#7850ff" stop-opacity="0.20"/>
+    <stop offset="1" stop-color="#7850ff" stop-opacity="0"/>
   </radialGradient>
-  <clipPath id="clip"><rect x="1" y="1" width="418" height="255" rx="15"/></clipPath>
+  <clipPath id="c3clip"><rect x="1" y="1" width="418" height="271" rx="15"/></clipPath>
 </defs>
-<rect x="1" y="1" width="418" height="255" rx="15" fill="url(#bg)"/>
-<g clip-path="url(#clip)"><rect x="1" y="1" width="418" height="255" fill="url(#glowV)"/><rect x="1" y="1" width="418" height="255" fill="url(#glowM)"/></g>
-<rect x="1" y="1" width="418" height="255" rx="15" stroke="url(#border)" stroke-opacity="0.85" stroke-width="1.6"/>
-<text x="24" y="46" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="20" font-weight="700" fill="#F0F6FC">🧠  Cue</text>
-<circle cx="334" cy="40" r="3" fill="#A78BFA"><animate attributeName="opacity" values="1;0.25;1" dur="2.6s" repeatCount="indefinite"/></circle>
-<text x="396" y="44" text-anchor="end" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="10.5" fill="#7D8590">Feb 2026</text>
-<rect x="24" y="56" width="44" height="3" rx="1.5" fill="url(#bar)"/>
-<text x="24" y="82" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="11" fill="#9BA6B5">AI Workspace Agent</text>
-<rect x="24" y="96" width="54" height="22" rx="6" fill="#A78BFA" fill-opacity="0.10" stroke="#A78BFA" stroke-opacity="0.28"/>
-<text x="51" y="111" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="10" fill="#C9B8FF">Gemini</text>
-<rect x="86" y="96" width="48" height="22" rx="6" fill="#A78BFA" fill-opacity="0.10" stroke="#A78BFA" stroke-opacity="0.28"/>
-<text x="110" y="111" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="10" fill="#C9B8FF">React</text>
-<rect x="142" y="96" width="96" height="22" rx="6" fill="#A78BFA" fill-opacity="0.10" stroke="#A78BFA" stroke-opacity="0.28"/>
-<text x="190" y="111" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="10" fill="#C9B8FF">MongoDB Atlas</text>
-<rect x="246" y="96" width="36" height="22" rx="6" fill="#A78BFA" fill-opacity="0.10" stroke="#A78BFA" stroke-opacity="0.28"/>
-<text x="264" y="111" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="10" fill="#C9B8FF">MCP</text>
-<circle cx="28" cy="138" r="2.5" fill="#EC4899"/>
-<text x="40" y="142" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="11" fill="#A9B4C0">Chrome extension pairing Gemini with MongoDB Atlas to</text>
-<text x="40" y="159" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="11" fill="#A9B4C0">forecast a user&#x27;s<tspan fill="#E6EDF3" font-weight="700"> next five tasks</tspan> from browsing</text>
-<text x="40" y="176" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="11" fill="#A9B4C0">history, surfaced in a real-time React dashboard.</text>
-<circle cx="28" cy="196" r="2.5" fill="#EC4899"/>
-<text x="40" y="200" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="11" fill="#A9B4C0">MCP orchestration across<tspan fill="#E6EDF3" font-weight="700"> 9+ Google Workspace tools</tspan> ,</text>
-<text x="40" y="217" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="11" fill="#A9B4C0">plus a multimodal scribe producing meeting summaries</text>
-<text x="40" y="234" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="11" fill="#A9B4C0">and highlight reels.</text>
+<rect x="1" y="1" width="418" height="271" rx="15" fill="url(#c3bg)"/><g clip-path="url(#c3clip)"><rect x="1" y="1" width="418" height="271" fill="url(#c3grid)"/><rect x="1" y="1" width="418" height="271" fill="url(#c3gm)"/><rect x="1" y="1" width="418" height="271" fill="url(#c3gv)"/></g><rect x="1" y="1" width="418" height="271" rx="15" fill="none" stroke="#ffffff" stroke-opacity="0.09" stroke-width="1"/><rect x="1" y="1" width="418" height="271" rx="15" fill="none" stroke="url(#c3edge)" stroke-width="1.4"/><path d="M13,30 L13,13 L30,13" fill="none" stroke="#00ffc8" stroke-opacity="0.5" stroke-width="1.5" stroke-linecap="square"/><path d="M390,13 L407,13 L407,30" fill="none" stroke="#00ffc8" stroke-opacity="0.5" stroke-width="1.5" stroke-linecap="square"/><path d="M13,243 L13,260 L30,260" fill="none" stroke="#00ffc8" stroke-opacity="0.5" stroke-width="1.5" stroke-linecap="square"/><path d="M390,260 L407,260 L407,243" fill="none" stroke="#00ffc8" stroke-opacity="0.5" stroke-width="1.5" stroke-linecap="square"/>
+<text x="24" y="30" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="9.5" letter-spacing="2.4" fill="#00ffc8" fill-opacity="0.75">PRJ_03</text>
+<circle cx="333" cy="26" r="6.7" fill="#00ffc8" fill-opacity="0.14"><animate attributeName="r" values="3.2;8.2;3.2" dur="2.8s" repeatCount="indefinite"/><animate attributeName="fill-opacity" values="0.22;0;0.22" dur="2.8s" repeatCount="indefinite"/></circle><circle cx="333" cy="26" r="3.2" fill="#00ffc8"><animate attributeName="opacity" values="1;0.35;1" dur="2.8s" repeatCount="indefinite"/></circle>
+<text x="396" y="30" text-anchor="end" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="10" letter-spacing="0.6" fill="#6c6c7d">Feb 2026</text>
+<text x="24" y="62" font-family="'Segoe UI',-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif" font-size="21" font-weight="700" letter-spacing="-0.4" fill="#ffffff">🧠  Cue</text>
+<rect x="24" y="72" width="46" height="3" rx="1.5" fill="url(#c3bar)"/>
+<text x="24" y="96" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="10.5" letter-spacing="1.6" fill="#a3a3b2">AI WORKSPACE AGENT</text>
+<rect x="24" y="110" width="54" height="22" rx="6" fill="#00ffc8" fill-opacity="0.09" stroke="#00ffc8" stroke-opacity="0.30"/>
+<text x="51" y="125" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="10" fill="#7dffb2">Gemini</text>
+<rect x="86" y="110" width="48" height="22" rx="6" fill="#7850ff" fill-opacity="0.09" stroke="#7850ff" stroke-opacity="0.30"/>
+<text x="110" y="125" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="10" fill="#c7a7ff">React</text>
+<rect x="142" y="110" width="96" height="22" rx="6" fill="#7850ff" fill-opacity="0.09" stroke="#7850ff" stroke-opacity="0.30"/>
+<text x="190" y="125" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="10" fill="#c7a7ff">MongoDB Atlas</text>
+<rect x="246" y="110" width="36" height="22" rx="6" fill="#7850ff" fill-opacity="0.09" stroke="#7850ff" stroke-opacity="0.30"/>
+<text x="264" y="125" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="10" fill="#c7a7ff">MCP</text>
+<path d="M28,152.6 L31.4,156 L28,159.4 L24.6,156 Z" fill="#00ffc8"/>
+<text x="40" y="160" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="11" fill="#a3a3b2">Chrome extension pairing Gemini with MongoDB Atlas to</text>
+<text x="40" y="177" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="11" fill="#a3a3b2">forecast a user&#x27;s<tspan fill="#00ffc8" font-weight="700"> next five tasks</tspan> from browsing</text>
+<text x="40" y="194" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="11" fill="#a3a3b2">history, surfaced in a real-time React dashboard.</text>
+<path d="M28,211.6 L31.4,215 L28,218.4 L24.6,215 Z" fill="#00ffc8"/>
+<text x="40" y="219" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="11" fill="#a3a3b2">MCP orchestration across<tspan fill="#00ffc8" font-weight="700"> 9+ Google Workspace tools</tspan>,</text>
+<text x="40" y="236" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="11" fill="#a3a3b2">plus a multimodal scribe producing meeting summaries</text>
+<text x="40" y="253" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="11" fill="#a3a3b2">and highlight reels.</text>
 </svg>

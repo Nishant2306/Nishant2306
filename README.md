@@ -1,32 +1,26 @@
 <div align="center">
-  <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:4F46E5,100:EC4899&height=210&section=header&text=Nishant%20Chaudhary&fontSize=52&fontColor=FFFFFF&animation=fadeIn&fontAlignY=35&desc=Discover%20%E2%80%A2%20Build%20%E2%80%A2%20Demo%20%E2%80%A2%20Iterate%20%E2%80%A2%20Ship&descAlignY=55&descSize=18" />
+  <img width="100%" alt="Nishant Chaudhary — Discover, Build, Demo, Iterate, Ship" src="https://raw.githubusercontent.com/Nishant2306/Nishant2306/master/assets/banner.svg" />
 </div>
 
 <div align="center">
   <a href="https://nishcodes.com">
-    <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=24&duration=2600&pause=800&color=A78BFA&center=true&vCenter=true&width=820&height=60&lines=Forward+Deployed+AI+Engineer+Intern+%40+ORIX%3BMS+CS+%40+Indiana+University+Bloomington%3BBuilding+AI+products+from+discovery+to+delivery%3BEx-Nomura+%E2%80%A2+Ex-TCS" alt="Typing intro" />
+    <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=24&duration=2600&pause=800&color=00FFC8&center=true&vCenter=true&width=820&height=60&lines=Forward+Deployed+AI+Engineer+Intern+%40+ORIX%3BMS+CS+%40+Indiana+University+Bloomington%3BBuilding+AI+products+from+discovery+to+delivery%3BEx-Nomura+%E2%80%A2+Ex-TCS" alt="Typing intro" />
   </a>
 </div>
 
 <div align="center">
-  <a href="https://nishcodes.com">
-    <img src="https://img.shields.io/badge/Portfolio-nishcodes.com-8B5CF6?style=for-the-badge&logo=firefox&logoColor=white" />
-  </a>
-  &nbsp;
-  <a href="https://www.linkedin.com/in/nishant-chaudhary-9a250521a">
-    <img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logoColor=white" />
-  </a>
-  &nbsp;
-  <a href="mailto:nishantchaudhary0512@gmail.com">
-    <img src="https://img.shields.io/badge/Email-Say%20hi-EA4335?style=for-the-badge&logo=gmail&logoColor=white" />
-  </a>
+  <a href="https://nishcodes.com"><img alt="Portfolio — nishcodes.com" src="https://raw.githubusercontent.com/Nishant2306/Nishant2306/master/assets/btn-portfolio.svg" /></a>
+  <a href="https://www.linkedin.com/in/nishant-chaudhary-9a250521a"><img alt="LinkedIn" src="https://raw.githubusercontent.com/Nishant2306/Nishant2306/master/assets/btn-linkedin.svg" /></a>
+  <a href="mailto:nishantchaudhary0512@gmail.com"><img alt="Email — say hi" src="https://raw.githubusercontent.com/Nishant2306/Nishant2306/master/assets/btn-email.svg" /></a>
   <br /><br />
-  <img src="https://komarev.com/ghpvc/?username=Nishant2306&style=for-the-badge&color=8B5CF6&label=PROFILE+VISITS" />
+  <img alt="Profile visits" src="https://komarev.com/ghpvc/?username=Nishant2306&style=for-the-badge&color=00FFC8&label=PROFILE+VISITS" />
 </div>
 
 <br />
 
-## ⚡ whoami
+<img width="100%" alt="// 01 — whoami" src="https://raw.githubusercontent.com/Nishant2306/Nishant2306/master/assets/hdr-whoami.svg" />
+
+<img width="100%" alt="nishant@github: ~" src="https://raw.githubusercontent.com/Nishant2306/Nishant2306/master/assets/term-bar.svg" />
 
 ```python
 # $ python nishant.py
@@ -63,23 +57,30 @@ if __name__ == "__main__":
     me = Nishant()
 ```
 
-## 💼 Where I've shipped
+<br />
 
-| | | |
-|---|---|---|
-| **ORIX** · Forward Deployed AI Engineer Intern | `May 2026 - Present` | Partnered with operations, lending, and portfolio teams to take AI products from requirements to delivery. Built an Azure document platform feeding an **85,000+ document** knowledge base, a grounded RAG agent, and Databricks Genie analytics that reduced query authoring from **10 min to under 20 sec**, while hardening refresh, indexing, access, and deployment workflows. |
-| **Nomura** · Software Engineer | `Jul 2024 - Jul 2025` | Owned an Angular to React migration of a 40+ page portal with **84% faster** loads for 200+ daily users. Built an auto-onboarding service cutting application setup from **3 weeks to 5 min**. Modeled 100+ applications as a Neo4j graph and reduced API latency by **20%**. |
-| **Nomura** · SDE Intern | `Jan 2024 - Jun 2024` | Implemented Pact Broker contract testing across services and increased coverage from **48% to 83%**. Rebuilt the portal with 20+ reusable components adopted by teams supporting 1,000+ users. |
-| **TCS** · SDE Intern | `May 2023 - Jul 2023` | Built a medical imaging pipeline over MRI and CT volumes with **98.5% detection accuracy** on 2-3 mm lesions. Created a Blender nasal reconstruction across 22 regions for an AR/VR simulator that was **70% faster** than the synchronous build. |
+<img width="100%" alt="// 02 — Where I've shipped" src="https://raw.githubusercontent.com/Nishant2306/Nishant2306/master/assets/hdr-experience.svg" />
 
-## 🧰 Tools I reach for
+<img width="100%" alt="ORIX — Forward Deployed AI Engineer Intern, May 2026 to Present. Partnered with operations, lending, and portfolio teams to take AI products from requirements to delivery. Built an Azure document platform feeding an 85,000+ document knowledge base, a grounded RAG agent, and Databricks Genie analytics that reduced query authoring from 10 min to under 20 sec, while hardening refresh, indexing, access, and deployment workflows." src="https://raw.githubusercontent.com/Nishant2306/Nishant2306/master/assets/exp-orix.svg" />
+
+<img width="100%" alt="Nomura — Software Engineer, Jul 2024 to Jul 2025. Owned an Angular to React migration of a 40+ page portal with 84% faster loads for 200+ daily users. Built an auto-onboarding service cutting application setup from 3 weeks to 5 min. Modeled 100+ applications as a Neo4j graph and reduced API latency by 20%." src="https://raw.githubusercontent.com/Nishant2306/Nishant2306/master/assets/exp-nomura-swe.svg" />
+
+<img width="100%" alt="Nomura — SDE Intern, Jan 2024 to Jun 2024. Implemented Pact Broker contract testing across services and increased coverage from 48% to 83%. Rebuilt the portal with 20+ reusable components adopted by teams supporting 1,000+ users." src="https://raw.githubusercontent.com/Nishant2306/Nishant2306/master/assets/exp-nomura-intern.svg" />
+
+<img width="100%" alt="TCS — SDE Intern, May 2023 to Jul 2023. Built a medical imaging pipeline over MRI and CT volumes with 98.5% detection accuracy on 2-3 mm lesions. Created a Blender nasal reconstruction across 22 regions for an AR/VR simulator that was 70% faster than the synchronous build." src="https://raw.githubusercontent.com/Nishant2306/Nishant2306/master/assets/exp-tcs.svg" />
+
+<br />
+
+<img width="100%" alt="// 03 — Tools I reach for" src="https://raw.githubusercontent.com/Nishant2306/Nishant2306/master/assets/hdr-stack.svg" />
 
 <!-- Curated from the resume. Full icon list available at skillicons.dev. -->
 <div align="center">
-  <img src="https://skillicons.dev/icons?i=python,java,cpp,ts,js,spring,fastapi,react,nodejs,flutter,pytorch,tensorflow,sklearn,postgres,redis,mongodb,azure,gcp,docker,kubernetes,githubactions,ansible,prometheus,grafana&perline=8" />
+  <img src="https://skillicons.dev/icons?i=python,java,cpp,ts,js,spring,fastapi,react,nodejs,flutter,pytorch,tensorflow,sklearn,postgres,redis,mongodb,azure,gcp,docker,kubernetes,githubactions,ansible,prometheus,grafana&perline=8&theme=dark" />
 </div>
 
-## 🚀 Things I've built
+<br />
+
+<img width="100%" alt="// 04 — Things I've built" src="https://raw.githubusercontent.com/Nishant2306/Nishant2306/master/assets/hdr-projects.svg" />
 
 <div align="center">
   <a href="https://github.com/Nishant2306/relay"><img width="48%" alt="Relay - LLM Cost Gateway" src="https://raw.githubusercontent.com/Nishant2306/Nishant2306/master/assets/card-relay.svg" /></a>
@@ -101,7 +102,9 @@ if __name__ == "__main__":
   <img width="48%" alt="AID is a private repository" src="https://raw.githubusercontent.com/Nishant2306/Nishant2306/master/assets/btn-aid-private.svg" />
 </div>
 
-## 🐍 A snake eating my contributions
+<br />
+
+<img width="100%" alt="// 05 — A snake eating my contributions" src="https://raw.githubusercontent.com/Nishant2306/Nishant2306/master/assets/hdr-snake.svg" />
 
 <div align="center">
   <picture>
@@ -114,9 +117,9 @@ if __name__ == "__main__":
 <br />
 
 <div align="center">
-  <b>Got an idea worth building? My inbox is open. 🚀</b>
+  <img width="100%" alt="Got an idea worth building? My inbox is open." src="https://raw.githubusercontent.com/Nishant2306/Nishant2306/master/assets/closing.svg" />
 </div>
 
 <div align="center">
-  <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:4F46E5,100:EC4899&height=110&section=footer" />
+  <img width="100%" src="https://raw.githubusercontent.com/Nishant2306/Nishant2306/master/assets/footer.svg" />
 </div>
