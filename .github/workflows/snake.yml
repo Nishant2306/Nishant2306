@@ -27,6 +27,28 @@ jobs:
             dist/github-snake.svg?color_snake=%235a30cc&color_dots=%23f5f5f0,%23cdebe1,%237fd9bf,%232bb894,%2300997a
             dist/github-snake-dark.svg?color_snake=%2300ffc8&color_dots=%2309090b,%231f1147,%233b2585,%235b39d6,%237850ff
 
+      # snk leaves the canvas transparent, so the gaps between contribution
+      # cells take the page colour. On a light-mode README that turns the dark
+      # grid into a block of black squares. Painting an opaque ground keeps the
+      # panel identical in both themes, like every other asset in assets/.
+      - name: Paint an opaque background behind the snake
+        run: |
+          python3 - <<'PY'
+          import glob, re
+          for path in sorted(glob.glob("dist/*.svg")):
+              svg = open(path, encoding="utf-8").read()
+              box = re.search(r'viewBox="(-?[\d.]+) (-?[\d.]+) ([\d.]+) ([\d.]+)"', svg)
+              if not box:
+                  print("no viewBox, skipping", path)
+                  continue
+              x, y, w, h = box.groups()
+              fill = "#09090b" if "dark" in path else "#f5f5f0"
+              cut = svg.index(">", svg.index("<svg")) + 1
+              rect = f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="12" fill="{fill}"/>'
+              open(path, "w", encoding="utf-8").write(svg[:cut] + rect + svg[cut:])
+              print(f"painted {path} {fill} over {x} {y} {w} {h}")
+          PY
+
       - name: Publish to output branch
         uses: crazy-max/ghaction-github-pages@v4
         with:
